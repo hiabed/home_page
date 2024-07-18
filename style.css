@@ -101,7 +101,7 @@ h1 {
     background-image: url(design4.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 70%;
+    background-size: 70% 100%; /* 70% width | 100% height.
     animation: fr 5s infinite;
     /* transition: 1.5s; */
 }
