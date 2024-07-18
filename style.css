@@ -156,7 +156,12 @@ p {
     /* width: fit-content; */
     max-width: 185px;
     height: fit-content;
+    transition: all 2s;
 }
+
+/* #play-block:hover {
+    max-width: 210px;
+} */
 
 #play-button {
     font-size: 20px;
@@ -213,7 +218,7 @@ a h3 {
     height: 75%;
     width: 80%;
     margin: 0 auto;
-    /* border-right: solid 5px #7a58586e; */
+    transition: all 1s;
 }
 
 .link > h3 {
