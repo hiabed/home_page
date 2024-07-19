@@ -49,13 +49,31 @@ h1 {
 #icon > img {
     height: 90%;
     width: 60%;
-    border: 2px solid #9477fa;
+    border: 2px solid #9477fa;      /* border can be modified in every side; */
+    /* border-style: double dotted; */
     box-shadow: 0px 0px 10px #9477fa;
     border-radius: 50%;
     position: relative;
     top: 15%;
     margin: auto;
+    animation: logo 3s infinite; /* keep if good */
 }
+
+@keyframes logo {
+    0% {
+        border-width: 2px;
+        border-style: solid dotted;
+    }
+    50% {
+        border-width: 10px;
+        border-style: double dotted;
+    }
+    100% {
+        border-width: 2px;
+    }
+}
+
+
 
 #icon {
     height: 15%;
