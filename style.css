@@ -184,14 +184,10 @@ p {
     position: relative;
     bottom: 0%;
     margin: 0;
-    /* width: fit-content; */
     max-width: 185px;
     height: fit-content;
+    
 }
-
-/* #play-block:hover {
-    max-width: 210px;
-} */
 
 #play-button {
     font-size: 20px;
