@@ -1,4 +1,15 @@
 /* user-name first last email profile-pic score ranking */
+/* fixed position in relation with the window */
+/* absolute position in relation with the first parent */
+/* relative position in relation with himself */
+/* sticky work when you scroll up to its position and keeps sticky in the place that you determine ... */
+/* z-index work with position (any kind of position) and the element with the biggest value will show up if its covered (-1 will be covered with all elements)*/
+/* !!! outline is the same as border but dont effect the with of the container and cant control every side of the outline/border */
+
+::selection { /* pseudo element */
+    background-color: rgb(136, 67, 136);
+    color: rgb(214, 214, 236);
+} 
 
 body {
     margin: 0;
@@ -52,7 +63,6 @@ h1 {
     height: 90%;
     width: 60%;
     border: 2px solid #9477fa;      /* border can be modified in every side; */
-    /* !!! outline is the same as border but dont effect the with of the container and cant control every side of the outline/border */
     box-shadow: 0px 0px 10px #9477fa;
     border-radius: 50%;
     position: relative;
@@ -228,10 +238,26 @@ a:hover h3, a:hover i {
     font-size: 1.55vw;
 }
 
+/* properies values can be inherited from their parents with "inherit" value*/
+
+/* Inheritable CSS Properties:
+Common CSS properties that are inheritable by default include:
+
+color
+font-family
+font-size
+font-style
+font-weight
+line-height
+text-align
+text-indent
+text-transform
+visibility */
+
 a h3 {
-    margin: 0 auto;
+    margin: auto;
     width: 85%;
-    font-size: 1.5vw;
+    font-size: 1.5vw; /* for responsivity */
     font-weight: bold;
     /* vertical-align: middle; used for align the text with the picture verticaly */
     /* text-shadow: -3px 2px 5px blueviolet; */
