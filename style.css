@@ -12,10 +12,6 @@
 /* pointer-events: none; (useful with javascript events) */
 /* content element to fill the content of the container */
 
-@media (width: 768) {
-    
-}
-
 ::selection { /* pseudo element */
     background-color: rgb(136, 67, 136);
     color: rgb(214, 214, 236);
@@ -303,4 +299,13 @@ a h3 {
     left: 16px;
     top: 11px;
     font-size: 36px;
+}
+
+/* Profile part */
+
+#profile > h2 {
+    color: whitesmoke;
+    width: 100px;
+    height: 100px;
+    text-align: center;
 }
