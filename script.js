@@ -1,8 +1,12 @@
 const link = document.querySelectorAll("a");
 const profileButton = document.querySelector("#profile");
-const main = document.querySelector("#main");
 const profileId = document.querySelector("#profile-part");
-// const games = document.querySelector("#games");
+const homeButton = document.querySelector("#home");
+const main = document.querySelector("#main");
+const settingButton = document.querySelector("#setting");
+const settingPage = document.querySelector("#setting-part");
+const chatButton = document.querySelector("#chat");
+const chatPage = document.querySelector("#chat-part");
 
 let j = 0;
 if (j === 0)
@@ -22,10 +26,11 @@ for (let i = 0; i < link.length ;i++)
     });
 };
 
-function profile(event)
+function profile()
 {
-    event.preventDefault();
     main.style.display = "none";
+    settingPage.style.display = "none";
+    chatPage.style.display = "none";
     profileId.style.display = "block";
     console.log("test profile..");
 }
@@ -34,9 +39,35 @@ profileButton.addEventListener("click", profile);
 
 function mainFunction()
 {
-    // console.log("test mic..");
-    main.style.display = "block";
     profileId.style.display = "none";
+    settingPage.style.display = "none";
+    chatPage.style.display = "none";
+    main.style.display = "block";
+    console.log("test mic..");
 }
 
-profileButton.addEventListener("click", mainFunction);
+homeButton.addEventListener("click", mainFunction);
+
+function settingFunction()
+{
+    profileId.style.display = "none";
+    main.style.display = "none";
+    chatPage.style.display = "none";
+    settingPage.style.display = "block";
+
+    console.log("test mic..");
+}
+
+settingButton.addEventListener("click", settingFunction);
+
+function chatFunction()
+{
+    profileId.style.display = "none";
+    main.style.display = "none";
+    settingPage.style.display = "none";
+    chatPage.style.display = "block";
+    
+    console.log("test mic..");
+}
+
+chatButton.addEventListener("click", chatFunction);

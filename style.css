@@ -61,7 +61,6 @@ h1 {
     padding-bottom: 2%;
     background-color: rgb(0, 21, 52);
     transition: 1s;
-    
 }
 
 #icon > img {
@@ -303,9 +302,45 @@ a h3 {
 
 /* Profile part */
 
-#profile > h2 {
+#profile-part {
+    border: 3px solid red;
+    width: 250px;
+    height: 150px;
+    margin: auto;
+}
+
+#profile-part > h2 {
     color: whitesmoke;
-    width: 100px;
-    height: 100px;
     text-align: center;
+    font-size: 50px;
+}
+
+/* Setting part */
+
+#setting-part {
+    width: 250px;
+    height: 150px;
+    margin: auto;
+    border: 3px solid yellow;
+}
+
+#setting-part > h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Chat part */
+
+#chat-part {
+    width: 250px;
+    height: 150px;
+    border: 3px solid purple;
+    margin: auto;
+}
+
+#chat-part > h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
 }
