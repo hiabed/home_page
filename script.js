@@ -43,6 +43,7 @@ function mainFunction()
     settingPage.style.display = "none";
     chatPage.style.display = "none";
     main.style.display = "block";
+    main.style.transition = "all 1s";
     console.log("test mic..");
 }
 

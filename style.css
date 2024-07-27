@@ -1,4 +1,4 @@
-/* user-name first last email profile-pic score ranking */
+/* user-name (first last email) profile-pic score ranking Match history */
 /* fixed position in relation with the window */
 /* absolute position in relation with the first parent */
 /* relative position in relation with himself */
@@ -60,7 +60,7 @@ h1 {
     padding-left: 4%;
     padding-bottom: 2%;
     background-color: rgb(0, 21, 52);
-    transition: 1s;
+    transition: all 1s;
 }
 
 #icon > img {
