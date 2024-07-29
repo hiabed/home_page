@@ -1,3 +1,7 @@
+// let username = '';
+// let defaultName = username || 'Stranger';
+// console.log(defaultName); // Prints: Stranger
+
 const link = document.querySelectorAll("a");
 const profileButton = document.querySelector("#profile");
 const profileId = document.querySelector("#profile-part");
