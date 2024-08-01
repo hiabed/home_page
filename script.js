@@ -2,7 +2,8 @@
 // let defaultName = username || 'Stranger';
 // console.log(defaultName); // Prints: Stranger
 
-const link = document.querySelectorAll("a");
+const links = document.querySelectorAll("a");
+
 const profileButton = document.querySelector("#profile");
 const profileId = document.querySelector("#profile-part");
 const homeButton = document.querySelector("#home");
@@ -15,20 +16,17 @@ const chatPage = document.querySelector("#chat-part");
 let j = 0;
 if (j === 0)
 {
-    link[j].classList.add('link');
+    links[j].classList.add('link');
     j++;
 }
 
-for (let i = 0; i < link.length ;i++)
-{
-    link[i].addEventListener("click", (event)=>
-    {
-        for (let i = 0; i < link.length; i++)
-            link[i].classList.remove('link');
+links.forEach ((link)=> {
+    link.addEventListener("click", (event)=> {
+        links.forEach (link => link.classList.remove('link'));
         event.preventDefault();
-        link[i].classList.add('link');
-    });
-};
+        link.classList.add('link');
+    })
+});
 
 function profile()
 {
@@ -59,7 +57,6 @@ function settingFunction()
     main.style.display = "none";
     chatPage.style.display = "none";
     settingPage.style.display = "block";
-
     console.log("test mic..");
 }
 
