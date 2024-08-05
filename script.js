@@ -28,8 +28,7 @@ links.forEach ((link)=> {
     })
 });
 
-function profile()
-{
+const profile = () => {
     main.style.display = "none";
     settingPage.style.display = "none";
     chatPage.style.display = "none";
@@ -39,8 +38,7 @@ function profile()
 
 profileButton.addEventListener("click", profile);
 
-function mainFunction()
-{
+const mainFunction = () => {
     profileId.style.display = "none";
     settingPage.style.display = "none";
     chatPage.style.display = "none";
@@ -51,8 +49,7 @@ function mainFunction()
 
 homeButton.addEventListener("click", mainFunction);
 
-function settingFunction()
-{
+const settingFunction = () => {
     profileId.style.display = "none";
     main.style.display = "none";
     chatPage.style.display = "none";
@@ -62,8 +59,7 @@ function settingFunction()
 
 settingButton.addEventListener("click", settingFunction);
 
-function chatFunction()
-{
+const chatFunction = () => {
     profileId.style.display = "none";
     main.style.display = "none";
     settingPage.style.display = "none";
