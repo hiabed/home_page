@@ -112,8 +112,6 @@ h1 {
     }
 } */
 
-
-
 #icon {
     height: 15%;
     width: 80%;
@@ -121,9 +119,10 @@ h1 {
 }
 
 .navig {
-    margin: auto;
-    height: 70px;
-    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    width: 90%;
+    margin-bottom: 2%;
 }
 
 #design {
@@ -171,13 +170,12 @@ h1 {
     margin-right: 3%;
 }
 
-#more {
+/* #more {
     color: whitesmoke;
     margin-left: 0;
     height: 170px;
     width: fit-content;
-    /* border: 3px solid green; */
-}
+} */
 
 #img1, #img2 {
     height: 170px;
@@ -214,6 +212,10 @@ p {
 }
 
 /* play Button */
+
+/* button {
+    border: none;
+} */
 
 #play-block {
     position: relative;
@@ -260,8 +262,17 @@ a {
     padding-top: 8px;
 }
 
-a:hover h3, a:hover i {
+.btn:hover h3, a:hover h3, a:hover i {
     font-size: 1.55vw;
+}
+
+/* .btn {
+    background-color: #6d349c11;
+    border: none;
+} */
+
+.btn:hover {
+    background-color: #6d349c8a;
 }
 
 /* properies values can be inherited from their parents with "inherit" value*/
@@ -290,12 +301,15 @@ a h3 {
     /* padding-top: 8px; */
 }
 
+.btn {
+    color: whitesmoke;
+    border: none;
+}
+
 .link {
     background-color: #6d349c8a;
-    border-radius: 5%;
+    border: none;
     box-shadow: 0px 0px 8px 2px #6d349c;
-    height: 75%;
-    width: 80%;
     margin: 0 auto;
     transition-duration: 0.8s;
 }
