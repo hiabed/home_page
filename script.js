@@ -3,7 +3,6 @@
 // console.log(defaultName); // Prints: Stranger
 
 const links = document.querySelectorAll("button");
-
 links[0].classList.add('link');
 
 links.forEach ((link)=> {

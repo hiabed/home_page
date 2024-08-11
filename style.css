@@ -12,6 +12,22 @@
 /* pointer-events: none; (useful with javascript events) */
 /* content element to fill the content of the container */
 
+/* properies values can be inherited from their parents with "inherit" value*/
+
+/* Inheritable CSS Properties:
+Common CSS properties that are inheritable by default include:
+
+color
+font-family
+font-size
+font-style
+font-weight
+line-height
+text-align
+text-indent
+text-transform
+visibility */
+
 /* ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
@@ -36,30 +52,66 @@
 
 @media (min-width: 769px) and (max-width: 991px) {
     /* Your CSS styles for tablets */
-    #main-img {
-      display: none; /* Example adjustment for readability on tablets */
-    }
-    #play-block {
-        position: relative;
-        bottom: 38%;
-    }
+    /* #main-img {
+      display: none;
+    } */
+
 }
 
 @media (min-width:0px) and (max-width:768px) {
-    /* Your CSS styles for tablets */
-    #main-img {
-      display: none; /* Example adjustment for readability on tablets */
-    }
-    #play-block {
-        position: relative;
-        bottom: 40%;
-    }
+    /* Your CSS styles for small devices */
+    /* #main-img {
+      display: none;
+    } */
+
 }
 
 @media (min-width: 0px) and (max-width: 991px) {
-    /* Your CSS styles for tablets */
+    /* Your CSS styles for small and medium devices */
     #main-img {
       display: none; /* Example adjustment for readability on tablets */
+    }
+    .col-12#XO {
+        width: 100%;
+    }
+    #play-block {
+        position: relative;
+        bottom: 30%;
+    }
+    #games {
+        position: relative;
+        bottom: 30%;
+        height: 50% !important;
+    }
+    #img1, #img2 {
+        width: 80% !important;
+    }
+    #main {
+        width: 40%;
+        margin: 3% auto;
+    }
+    .ll h3 {
+        display: none !important;
+    }
+    .btn i {
+        font-size: 2.8vw;
+    }
+    .ll {
+        text-align: center !important;
+    }
+    .navig {
+        width: 70% !important;
+    }
+    #icon > img {
+        height: 75% !important;
+        width: 90% !important;
+        margin-bottom: 25% !important;
+    }
+    h1 {
+        font-size: 3.5vw !important;
+    }
+    #description p {
+        font-size: 1.8vw !important;
     }
 }
 
@@ -81,7 +133,7 @@ body {
 
 i {
     color: whitesmoke;
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
     /* filter: drop-shadow(-4px 3px 5px blueviolet); */
 }
 
@@ -107,7 +159,7 @@ h1 {
 }
 
 #main {
-    min-height: 100vh;
+    min-height: 100%;
     padding-left: 4%;
     padding-bottom: 2%;
     background-color: rgb(0, 21, 52);
@@ -126,20 +178,6 @@ h1 {
     /* keep if good */
     /* animation: logo 3s infinite;  */
 }
-
-/* @keyframes logo {
-    0% {
-        border-width: 2px;
-        border-style: solid dotted;
-    }
-    50% {
-        border-width: 10px;
-        border-style: double dotted;
-    }
-    100% {
-        border-width: 2px;
-    }
-} */
 
 #icon {
     height: 15%;
@@ -185,9 +223,9 @@ h1 {
 
 #ping-pong {
     /* border: 4px solid rgb(0, 247, 255); */
-    height: 170px;
-    width: 250px;
     margin-left: 0;
+    height: 170px;
+    /* width: 250px; */
     margin-right: 4%;
 }
 
@@ -195,8 +233,8 @@ h1 {
     /* border: 4px solid rgb(0, 255, 0); */
     margin-left: 0;
     height: 170px;
-    width: 250px;
-    margin-right: 3%;
+    /* width: 250px; */
+    margin-right: 4%;
 }
 
 #img1, #img2 {
@@ -290,33 +328,24 @@ a , button {
 
 .btn:not(.link):hover {
     background-color: rgba(83, 83, 83, 0.473); /*hover effect for buttons without 'link' */
+    box-shadow: 0px 0px 8px 2px rgba(83, 83, 83, 0.473);
 }
 
-/* properies values can be inherited from their parents with "inherit" value*/
 
-/* Inheritable CSS Properties:
-Common CSS properties that are inheritable by default include:
 
-color
-font-family
-font-size
-font-style
-font-weight
-line-height
-text-align
-text-indent
-text-transform
-visibility */
-
-a h3, .btn h3 {
-    margin: auto;
+.btn .ll {
+    /* margin: auto; */
     width: 85%;
-    font-size: 1.5vw; /* for responsivity */
+    font-size: 1.7vw; /* for responsivity */
     font-weight: bold;
     text-align: start;
     /* vertical-align: middle; used for align the text with the picture verticaly */
     /* text-shadow: -3px 2px 5px blueviolet; */
     /* padding-top: 8px; */
+}
+
+.btn h3 {
+    font-size: 1.7vw;
 }
 
 .btn {
@@ -336,7 +365,7 @@ a h3, .btn h3 {
     background-color: #6d349c8a;
 }
 
-.link > h3 {
+.link > .ll {
     text-align: center;
 }
 
