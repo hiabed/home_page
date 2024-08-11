@@ -6,7 +6,7 @@ const settingFunction = () => {
     main.style.display = "none";
     chatPage.style.display = "none";
     settingPage.style.display = "block";
-    console.log("test mic..");
+    // console.log("test mic..");
 }
 
 settingButton.addEventListener("click", settingFunction);

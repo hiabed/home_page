@@ -6,7 +6,7 @@ const profile = () => {
     settingPage.style.display = "none";
     chatPage.style.display = "none";
     profileId.style.display = "block";
-    console.log("test profile..");
+    // console.log("test profile..");
 }
 
 profileButton.addEventListener("click", profile);

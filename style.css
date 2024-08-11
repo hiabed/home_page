@@ -58,15 +58,93 @@ visibility */
 
 }
 
-@media (min-width:0px) and (max-width:768px) {
+@media (min-width:0px) and (max-width:767px) {
     /* Your CSS styles for small devices */
-    /* #main-img {
+    #main {
+        width: 80%;
+        margin: auto;
+        height: 50vh;
+    }
+    #profile-img {
+        width: 46px !important;
+        height: 46px !important;
+        top: 2% !important;
+    }
+    #profile-img > i {
+        font-size: 22px !important;
+        top: 10px !important;
+        left: 13px !important;
+    }
+    .btn:not(#play-block) {
+        height: 70%;
+    }
+    #design {
+        margin-top: 10px;
+        height: 40% !important;
+    }
+    #play-block {
+        height: 21% !important;
+        position: relative;
+        bottom: 4%;
+    }
+    #main-img {
       display: none;
-    } */
-
+    }
+    .navig {
+        display: inline-block !important;
+        width: 50px !important;
+    }
+    #icon > img {
+        height: 70px !important;
+        width: 100px !important;
+        margin-bottom: 25% !important;
+        position: relative;
+        right: 50%;
+    }
+    #logout {
+        display: none;
+    }
+    .ll h3 {
+        display: none !important;
+    }
+    .btn i {
+        font-size: 3.5vw;
+        padding: auto;
+    }
+    #contain {
+        margin: 0 !important;
+        display: inline-block !important;
+        position: relative;
+        left: 10%;
+    }
+    #icon {
+        position: relative;
+        top: 5px;
+        left: 8%;
+        height: 20px !important;
+        width: 80px !important;
+        margin: 0 auto !important;
+        display: inline-block !important;
+    }
+    #nav {
+        box-shadow: inset 0 0 2px 0px whitesmoke !important;
+        height: fit-content !important;
+    }
+    #description {
+        margin-top: 3% !important;
+    }
+    h1 {
+        font-size: 3.5vw !important;
+    }
+    p {
+        font-size: 2.5vw !important;
+    }
+    #games {
+        height: 80% !important;
+    }
 }
 
-@media (min-width: 0px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     /* Your CSS styles for small and medium devices */
     #main-img {
       display: none; /* Example adjustment for readability on tablets */
@@ -94,7 +172,7 @@ visibility */
         display: none !important;
     }
     .btn i {
-        font-size: 2.8vw;
+        font-size: 3vw;
     }
     .ll {
         text-align: center !important;
@@ -102,10 +180,12 @@ visibility */
     .navig {
         width: 70% !important;
     }
+    /* height: 100px;
+    width: 120px; */
     #icon > img {
-        height: 75% !important;
-        width: 90% !important;
-        margin-bottom: 25% !important;
+        height: 80px !important;
+        width: 100px !important;
+        margin-bottom: 30% !important;
     }
     h1 {
         font-size: 3.5vw !important;
@@ -144,10 +224,10 @@ h1 {
 
 #logout {
     position: relative;
-    top: 37%;
+    top: 33%;
     margin: auto;
     height: 70px;
-    width: 100%;
+    width: 90%;
 }
 
 #nav {
@@ -159,7 +239,7 @@ h1 {
 }
 
 #main {
-    min-height: 100%;
+    min-height: 70vh;
     padding-left: 4%;
     padding-bottom: 2%;
     background-color: rgb(0, 21, 52);
@@ -167,8 +247,8 @@ h1 {
 }
 
 #icon > img {
-    height: 90%;
-    width: 60%;
+    height: 100px;
+    width: 120px;
     border: 2px solid #9477fa;      /* border can be modified in every side; */
     box-shadow: 0px 0px 10px #9477fa;
     border-radius: 50%;
@@ -180,16 +260,17 @@ h1 {
 }
 
 #icon {
-    height: 15%;
-    width: 80%;
-    margin: auto;
+    /* height: 15%; */
+    /* width: 80%; */
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 .navig {
     margin: 0 auto;
-    height: 60px;
+    height: 50px;
     width: 90%;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
 }
 
 #design {
