@@ -94,13 +94,6 @@ visibility */
         display: inline-block !important;
         width: 50px !important;
     }
-    #icon > img {
-        height: 70px !important;
-        width: 100px !important;
-        margin-bottom: 25% !important;
-        position: relative;
-        right: 50%;
-    }
     #logout {
         display: none;
     }
@@ -119,12 +112,15 @@ visibility */
     }
     #icon {
         position: relative;
-        top: 5px;
-        left: 8%;
-        height: 20px !important;
-        width: 80px !important;
-        margin: 0 auto !important;
+        top: 10px;
+        height: 60px !important;
+        width: 70px !important;
+        margin: 0 !important;
         display: inline-block !important;
+    }
+    #icon > img {
+        height: 100% !important;
+        width: 100px !important;
     }
     #nav {
         box-shadow: inset 0 0 2px 0px whitesmoke !important;
@@ -267,8 +263,6 @@ h1 {
     border: 2px solid #9477fa;      /* border can be modified in every side; */
     box-shadow: 0px 0px 10px #9477fa;
     border-radius: 50%;
-    position: relative;
-    top: 15%;
     margin: auto;
     /* keep if good */
     /* animation: logo 3s infinite;  */
