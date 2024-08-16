@@ -9,28 +9,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="setting.css">
 </head>
 <body>
+    <div id="profile-img"><i class="fa-solid fa-user"></i></div>
     <div class="container-fluid" id="parent">
         <div class="row">
             <!-- first part -->
             <div class="col-12 col-md-2" id="nav">
                 <div class="row" id="icon">
-                    <!-- <h1><strong>Y8<br><span>GAME</span></strong></h1> -->
                     <img src="logo.avif" alt="logo">
                 </div>
                 <div id="contain">
                     <div class="row navig" id="home">
-                        <button class="btn"><div class="ll"><i class="fa-solid fa-house"></i> <h3 class="rem" style="display: inline-block;">Home</h3></div></button>
+                        <button class="btn"><div class="ll"><i class="fa-solid fa-house"></i> <h3 class="rem d-inline-block" >Home</h3></div></button>
                     </div>
                     <div class="row navig" id="profile">
-                        <button class="btn"><div class="ll"><i class="fa-solid fa-user"></i> <h3 class="rem" style="display: inline-block;">Profile</h3></div></button>
+                        <button class="btn"><div class="ll"><i class="fa-solid fa-user"></i> <h3 class="rem d-inline-block" >Profile</h3></div></button>
                     </div>
                     <div class="row navig" id="chat">
-                        <button class="btn"><div class="ll"><i class="fa-solid fa-message"></i> <h3 class="rem" style="display: inline-block;">Chat</h3></div></button>
+                        <button class="btn"><div class="ll"><i class="fa-solid fa-message"></i> <h3 class="rem d-inline-block">Chat</h3></div></button>
                     </div>
                     <div class="row navig" id="setting">
-                        <button class="btn"><div class="ll"><i class="fa-solid fa-gear"></i> <h3 class="rem" style="display: inline-block;">Setting</h3></div></button>
+                        <button class="btn"><div class="ll"><i class="fa-solid fa-gear"></i> <h3 class="rem d-inline-block">Setting</h3></div></button>
                     </div>
                 </div>
                 <div class="row" id="logout">
@@ -46,11 +49,10 @@
                     </div>
                     <div class="col-lg-8">
                         <div id="main-img"></div>
-                        <div id="profile-img"><i class="fa-solid fa-user"></i></div>
                     </div>
-                <div class="row" id="play-block">
-                    <button type="button" class="btn btn-primary btn-sm" id="play-button">Play Now </button><i class="fa-solid fa-circle-play" id="play-icon"></i>
-                </div>
+                    <div class="row" id="play-block">
+                        <button type="button" class="btn btn-primary btn-sm" id="play-button">Play Now </button><i class="fa-solid fa-circle-play" id="play-icon"></i>
+                    </div>
                 </div>
             
                 <div class="row" id="games">
@@ -64,8 +66,41 @@
                 </div>
             </div>
             <!-- Profile part -->
-            <div id="profile-part">
-                <h2>Profile page</h2>
+            <div class="col-md-10" id="profile-part">
+                <div class="row">
+                    <div id="user-picture">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="col-12">
+                        <div class="row" id="user-info">
+                            <div class="col-12 col-md-6 uInfo" id="first">
+                                <h1 style="color: #6d349c;">User infos:</h1>
+                                <h2 style="display: inline-block;">username: </h2> <h4 style="display: inline-block;"> <span style="color: white;">mhassani</span></h4>
+                                <div id="empty"></div>
+                                <h2 style="display: inline-block;">first-name: </h2> <h4 style="display: inline-block;"> <span style="color: white;">Mohammed-Abed</span></h4>
+                                <div id="empty"></div>
+                                <h2 style="display: inline-block;">last-name: </h2> <h4 style="display: inline-block;"> <span style="color: white;">Hassani-Idrissi</span></h4>
+                                <div id="first-empty"></div>
+                            </div>
+                            <div class="col-12 col-md-6 uInfo" id="second">
+                                <h1 style="color: #6d349c;">Statistics:</h1>
+                                <h2 style="display: inline-block;">wins: </h2> <h4 style="display: inline-block;"> <span style="color: white;">42</span></h4>
+                                <div id="empty"></div>
+                                <h2 style="display: inline-block;">loses: </h2> <h4 style="display: inline-block;"> <span style="color: white;">42</span></h4>
+                                <div id="empty"></div>
+                                <h2 style="display: inline-block;">score: </h2> <h4 style="display: inline-block;"> <span style="color: white;">1042</span></h4>
+                            </div>
+                        </div>
+                        <div class="row" id="statistics">
+                            <div class="col-6" id="leaderboard">
+                                <h1>Leaderboard</h1>
+                            </div>
+                            <div class="col-6" id="match-history">
+                                <h1>Match History</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Chat part -->
             <div id="chat-part">

@@ -6,8 +6,7 @@ const chatFunction = () => {
     main.style.display = "none";
     settingPage.style.display = "none";
     chatPage.style.display = "block";
-    
-    console.log("test mic..");
+    // document.querySelector("#profile-img").style.display = "block";
 }
 
 chatButton.addEventListener("click", chatFunction);

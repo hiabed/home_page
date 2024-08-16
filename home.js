@@ -7,6 +7,7 @@ const mainFunction = () => {
     chatPage.style.display = "none";
     main.style.display = "block";
     // main.style.transition = "all 1s";
+    // document.querySelector("#profile-img").style.display = "block";
 }
 
 homeButton.addEventListener("click", mainFunction);

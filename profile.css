@@ -1,0 +1,137 @@
+:root {
+    --uInfo_height: 31vh;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    #first {
+        border: 2px solid antiquewhite !important;
+    }
+    #second {
+        border: 2px solid antiquewhite !important;
+        border-top: none !important;
+    }
+    #user-info {
+        border: none !important;
+    }
+    #user-info h1, #statistics h1 {
+        font-size: 20px !important;
+    }
+    
+}
+
+
+@media (min-width: 1400px){
+    #profile-part {
+        width: 60vw !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    #profile-part {
+        width: 55vw !important;
+    }
+}
+
+#profile-part {
+    display: none;
+    background-color: #7b45a645;
+    box-shadow: 0 0 10px #4fb0c6;
+    border-radius: 20px;
+    width: 70vw;
+    height: 90vh;
+    margin: auto;
+    position: relative;
+    top: 46px;
+    background-image: url(game-background.jpeg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: -70px;
+}
+
+#profile-part #statistics {
+    /* border: 2px solid red; */
+    height: calc(100vh - var(--uInfo_height) - 10vh - 130px);
+}
+
+#statistics h1 {
+    text-align: center;
+    color: rgb(194, 223, 213);
+}
+
+#leaderboard {
+    border-top: 2px solid #9affec6b;
+    border-right: 2px solid #9affec6b;
+}
+
+#match-history {
+    border-top: 2px solid #9affec6b;
+    /* border-right: 2px solid antiquewhite;
+    border-bottom: 2px solid antiquewhite;
+    border-left: none; */
+}
+
+#user-info {
+    width: 90%;
+    height: var(--uInfo_height);
+    margin: 0 auto;
+    border: 2px solid #9affec6b;
+    position: relative;
+    bottom: 70px;
+    border-radius: 10px;
+}
+
+#user-info h1, #statistics h1 {
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+#user-info h2 {
+    color: aquamarine !important;
+    /* text-align: center; */
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+#user-info h4 {
+    /* color: rgb(194, 223, 213) !important;
+    text-align: center; */
+    font-size: 15px !important;
+    font-weight: bold;
+}
+
+#user-picture {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 2px solid aquamarine;
+    margin: 0 auto;
+    position: relative;
+    bottom: 70px;
+}
+
+#user-picture > i {
+    font-size: 64px;
+    position: absolute;
+    left: 32px;
+    top: 25px;
+    color: #c6e1dc;
+}
+
+/* #first-empty {
+    height: 100%;
+} */
+
+.uInfo {
+    color: #c6e1dc;
+}
+
+#first {
+    border-right: 2px solid #9affec6b;
+}
+
+/* #profile-part > h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+} */

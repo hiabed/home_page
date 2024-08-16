@@ -1,9 +1,0 @@
-#icon {
-    position: relative;
-    top: 10px;
-    height: 60px !important;
-    width: 70px !important;
-    margin: 0 !important;
-    display: inline-block !important;
-}
-

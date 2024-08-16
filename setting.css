@@ -1,0 +1,13 @@
+#setting-part {
+    display: none;
+    width: 250px;
+    height: 150px;
+    margin: auto;
+    border: 3px solid yellow;
+}
+
+#setting-part > h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+}

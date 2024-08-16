@@ -1,0 +1,13 @@
+#chat-part {
+    display: none;
+    width: 250px;
+    height: 150px;
+    border: 3px solid purple;
+    margin: auto;
+}
+
+#chat-part > h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+}

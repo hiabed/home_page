@@ -6,6 +6,7 @@ const settingFunction = () => {
     main.style.display = "none";
     chatPage.style.display = "none";
     settingPage.style.display = "block";
+    // document.querySelector("#profile-img").style.display = "block";
     // console.log("test mic..");
 }
 
