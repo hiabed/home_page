@@ -4,10 +4,13 @@
 
 @media (min-width: 0px) and (max-width: 575px) {
     :root {
-        --uInfo_height: 32vh;
+        --uInfo_height: 40vh;
+    }
+    #user-info {
+        box-shadow: none !important;
     }
     #profile-part {
-        height: 80vh !important;
+        height: 100vh !important;
         top: 70px !important;
         width: 80vw !important;
         min-width: 307px;
