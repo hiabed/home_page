@@ -1,14 +1,15 @@
 :root {
-    --uInfo_height: 31vh;
+    --uInfo_height: 20vh;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
     :root {
-        --uInfo_height: 37vh;
+        --uInfo_height: 32vh;
     }
     #profile-part {
-        height: 83vh !important;
+        height: 68vh !important;
         top: 70px !important;
+        width: 80vw !important;
     }
     #first, #second {
         display: flex;
@@ -34,16 +35,12 @@
     }
 }
 
-
-@media (min-width: 1400px){
-    #profile-part {
-        width: 55vw !important;
+@media (min-width: 768px) and (max-width: 991px) {
+    :root {
+        --uInfo_height: 20vh;
     }
-}
-
-@media (min-width: 1600px) {
     #profile-part {
-        width: 50vw !important;
+        width: 70vw !important;
     }
 }
 
@@ -52,18 +49,18 @@
     background-color: #7b45a645;
     box-shadow: 0 0 10px #4fb0c6;
     border-radius: 20px;
-    width: 60vw;
-    height: 90vh;
+    width: 740px;
+    height: 75vh;
     margin: auto;
     position: relative;
     top: 46px;
-    background-image: url(game-background-new.jpeg);
+    background-image: url(2.jpeg);
     background-size: cover;
 }
 
 #profile-part #statistics {
     /* border: 2px solid red; */
-    height: calc(100vh - var(--uInfo_height) - 10vh - 130px);
+    height: calc(100vh - var(--uInfo_height) - 25vh - 130px);
 }
 
 #statistics h1 {
