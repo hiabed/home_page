@@ -2,7 +2,38 @@
     --uInfo_height: 20vh;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 575px) {
+    :root {
+        --uInfo_height: 32vh;
+    }
+    #profile-part {
+        height: 80vh !important;
+        top: 70px !important;
+        width: 80vw !important;
+        min-width: 307px;
+    }
+    #first, #second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+        margin: 20px auto !important;
+    }
+    #user-picture {
+        width: 64px !important;
+        height: 64px !important;
+        bottom: 59px !important;
+    }
+    #leaderboard {
+        height: 191px;
+    }
+    #match-history {
+        height: 191px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
     :root {
         --uInfo_height: 32vh;
     }
@@ -19,19 +50,10 @@
         width: 100% !important;
         margin: 20px auto !important;
     }
-    #user-info h1, #statistics h1 {
-        font-size: 20px !important;
-    }
     #user-picture {
         width: 64px !important;
         height: 64px !important;
         bottom: 59px !important;
-    }
-    #user-picture > i {
-        font-size: 32px !important;
-        position: absolute;
-        left: 16px !important;
-        top: 12px !important;
     }
 }
 
@@ -40,7 +62,7 @@
         --uInfo_height: 20vh;
     }
     #profile-part {
-        width: 70vw !important;
+        width: 80vw !important;
     }
 }
 
