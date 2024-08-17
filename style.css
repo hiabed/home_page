@@ -521,14 +521,7 @@ a , button {
 }
 
 .btn .ll {
-    /* margin: auto; */
-    width: 85%;
-    font-size: 1.7vw; /* for responsivity */
-    font-weight: bold;
     text-align: start;
-    /* vertical-align: middle; used for align the text with the picture verticaly */
-    /* text-shadow: -3px 2px 5px blueviolet; */
-    /* padding-top: 8px; */
 }
 
 .btn h3 {
