@@ -37,13 +37,13 @@
 
 @media (min-width: 1400px){
     #profile-part {
-        width: 60vw !important;
+        width: 55vw !important;
     }
 }
 
 @media (min-width: 1600px) {
     #profile-part {
-        width: 55vw !important;
+        width: 50vw !important;
     }
 }
 
@@ -52,7 +52,7 @@
     background-color: #7b45a645;
     box-shadow: 0 0 10px #4fb0c6;
     border-radius: 20px;
-    width: 70vw;
+    width: 60vw;
     height: 90vh;
     margin: auto;
     position: relative;
@@ -78,9 +78,6 @@
 
 #match-history {
     border-top: 2px solid #9affec6b;
-    /* border-right: 2px solid antiquewhite;
-    border-bottom: 2px solid antiquewhite;
-    border-left: none; */
 }
 
 #user-info {
@@ -121,15 +118,17 @@
     margin: 0 auto;
     position: relative;
     bottom: 70px;
+    background-image: url(me.jpg);
+    background-size: contain;
 }
 
-#user-picture > i {
+/* #user-picture > i {
     font-size: 64px;
     position: absolute;
     left: 32px;
     top: 25px;
     color: #c6e1dc;
-}
+} */
 
 /* #first-empty {
     height: 100%;
