@@ -139,6 +139,23 @@
     overflow: auto;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 12, 45);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 12, 45, 0.8);
+  }
+
 #chats div {
     margin-top: 15px !important;
     width: 90%;
