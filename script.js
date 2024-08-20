@@ -13,3 +13,29 @@ links.forEach ((link)=> {
     })
 });
 
+const data_example = async() => {
+    try {
+        const data = await fetch("https://dattebayo-api.onrender.com/characters");
+        if (data.ok)
+        {
+            const json_data = await data.json();
+            return json_data.characters;
+        }
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+const data_characters = async() => {
+    const characters = await data_example();
+    characters.forEach(character => {
+        const users = document.createElement("div");
+        document.querySelector("#chats").appendChild(users);
+        users.innerHTML = character.name;
+        // document.querySelector("#chat-pic").style.backgroundImage  = `url("${character.images[0]}")` change when click on the user only.
+        document.querySelector("#secondd h3").innerHTML = character.name;
+    })
+}
+
+data_characters();
+

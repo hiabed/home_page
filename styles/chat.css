@@ -60,7 +60,9 @@
     top: 10%;
     left: 3%;
     background-image: url(../images/me.jpg);
-    background-size: contain;
+    background-size: cover;
+    /* background-position-x: -10px;
+    background-position-y: 0px; */
 }
 
 #secondd h3 {
@@ -134,4 +136,17 @@
     width: 100%;
     height: 80%;
     margin: auto;
+    overflow: auto;
+}
+
+#chats div {
+    margin-top: 15px !important;
+    width: 90%;
+    height: 50px;
+    box-shadow: 0 0 5px #0e2c2e;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
 }
