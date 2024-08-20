@@ -51,6 +51,35 @@
     width: 100%;
 }
 
+#secondd #chat-pic {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid aqua;
+    position: relative;
+    top: 10%;
+    left: 3%;
+    background-image: url(../images/me.jpg);
+    background-size: contain;
+}
+
+#secondd h3 {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    bottom: 55%;
+    left: 90px;
+}
+
+#secondd p {
+    font-size: 13px;
+    color: white;
+    opacity: 50%;
+    position: relative;
+    bottom: 64%;
+    left: 90px;
+}
+
 #messages {
     background-color: rgba(0, 12, 45, 0.90);
     border-radius: 10px;
