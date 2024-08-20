@@ -1,7 +1,14 @@
+
+@media (min-width: 0px) and (max-width: 767px) {
+    #chat-part {
+        width: 100% !important;
+    }
+}
+
 #chat-part {
     box-shadow: 0 0 10px #4f868a;
     display: none;
-    width: 80% !important;
+    width: 80%;
     max-width: 850px;
     height: 60vh;
     border-radius: 10px;
@@ -61,8 +68,8 @@
     left: 3%;
     background-image: url(../images/me.jpg);
     background-size: cover;
-    /* background-position-x: -10px;
-    background-position-y: 0px; */
+    background-position-x: -10px;
+    /* background-position-y: 0px; */
 }
 
 #secondd h3 {
@@ -139,22 +146,22 @@
     overflow: auto;
 }
 
-::-webkit-scrollbar {
+#chats::-webkit-scrollbar {
     width: 10px;
     height: 20px;
 }
 
-::-webkit-scrollbar-track {
+#chats::-webkit-scrollbar-track {
     background: gray;
 }
 
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 12, 45);
+#chats::-webkit-scrollbar-thumb {
+    background: rgb(32, 44, 80);
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 12, 45, 0.8);
-  }
+#chats::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 12, 45, 0.5);
+}
 
 #chats div {
     margin-top: 15px !important;
