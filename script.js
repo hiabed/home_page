@@ -10,7 +10,6 @@ links.forEach ((link)=> {
         links.forEach (link => {link.classList.remove('link')});
         // event.preventDefault();
         link.classList.add('link');
-        console.log("here");
     })
 });
 
