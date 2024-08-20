@@ -409,10 +409,10 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    animation: fr 3s infinite;
+    animation: frame 3s infinite;
 }
 
-@keyframes fr {
+@keyframes frame {
     0% {
         background-image: url("/images/design4.png");
     }
@@ -529,6 +529,7 @@ a, button {
 
 .btn h3 {
     font-size: 20px;
+    color: white;
 }
 
 /* .btn {
@@ -536,22 +537,22 @@ a, button {
     border: none;
 } */
 
-/* .link {
+.link {
     background-color: #6d349c8a;
     border: none;
     box-shadow: 0px 0px 8px 2px #6d349c;
     margin: 0 auto;
     transition-duration: 0.5s;
     height: 100% !important;
-} */
+}
 
-/* .link:hover {
+.link:hover {
     background-color: #6d349c8a;
 }
 
 .link > .ll {
     text-align: center;
-} */
+}
 
 #profile-img {
     border: 1px solid #9c949c;
