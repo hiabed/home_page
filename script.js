@@ -36,18 +36,43 @@ const data_characters = async() => {
         user.addEventListener("click", ()=> {
             const users = document.querySelectorAll("#chats div");
             users.forEach(userr => {
+                userr.classList.remove("selected-user");
                 userr.style.width = "90%";
                 userr.style.boxShadow = "0 0 5px #0e2c2e";
             })
-            user.style.width = "98%";
+            user.style.width = "95%";
             user.style.boxShadow = "0 0 5px #9bf9ff";
+            user.classList.add("selected-user");
             document.querySelector("#chat-pic").style.backgroundImage  = `url("${character.images[0]}")`;
             document.querySelector("#secondd h3").innerHTML = character.name;
         })
     })
 }
 
-//  change when click on the user only.
+const sendMsg = document.querySelector("#something");
+
+sendMsg.addEventListener("keyup", (event)=> {
+    if (event.key === "Enter") {
+        // console.log(sendMsg.value);
+        if (sendMsg.value != "friend") {
+            const msg = document.createElement("div");
+            msg.classList.add("my-msg");
+            document.querySelector("#messages").appendChild(msg);
+            msg.innerHTML = `${sendMsg.value}`;
+            const leftPosition = 425 - sendMsg.value.length + "px";
+            msg.style.left= leftPosition;
+            sendMsg.value = "";
+        } else {
+            const msg = document.createElement("div");
+            document.querySelector("#messages").appendChild(msg);
+            msg.classList.add("friend-msg");
+            msg.innerHTML = `${sendMsg.value}`;
+            sendMsg.value = "";
+        }
+    }
+})
+
+
 
 data_characters();
 
