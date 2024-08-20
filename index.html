@@ -24,7 +24,7 @@
     <div class="container-fluid">
         <div class="row">
             <!-- login part -->
-            <div class="row" id="parent" style="display: none;">
+            <div class="row" id="parent" style="display: none;" > <!--  style="display: flex;" -->
                 <div class="col-12 col-md-12 col-lg-6" id="one">
                     <h1 class="mb-3">Let's play <i class="fa-solid fa-table-tennis-paddle-ball icon"></i></h1> <!-- with logo in right -->
                     <div class="d-grid gap-2 mb-4">
@@ -39,7 +39,7 @@
                     <p>Password:</p>
                     <div class="input-group mb-4">
                         <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw">
+                        <input type="password" class="form-control form-control-lg psw" placeholder="Password">
                     </div>
                     <div class="d-grid gap-2">
                         <button class="btn btn-success btn-lg mb-3 login">Log in</button>
@@ -68,12 +68,12 @@
                     <p>Password:</p>
                     <div class="input-group mb-4">
                         <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw">
+                        <input type="password" class="form-control form-control-lg psw" placeholder="Password">
                     </div>
                     <p>Retype password:</p>
                     <div class="input-group mb-4">
                         <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw">
+                        <input type="password" class="form-control form-control-lg psw" placeholder="Password">
                     </div>
                     <div class="d-grid gap-2">
                         <button class="btn btn-success btn-lg mb-3 login">Sign up</button>
@@ -82,30 +82,30 @@
                 </div>
             </div>
             <!-- nav part -->
-            <div class="col-12 col-md-2" id="nav">
+            <div class="col-12 col-md-2" id="nav" style="display: block;" >
                 <div class="row" id="icon">
                     <img src="/images/logo.avif" alt="logo">
                 </div>
                 <div id="contain">
                     <div class="row navig" id="home">
-                        <button class="btn"><div class="ll"><i class="fa-solid fa-house"></i> <h3 class="rem d-inline-block" >Home</h3></div></button>
+                        <button class="btn nav-button"><div class="ll"><i class="fa-solid fa-house"></i> <h3 class="rem d-inline-block" >Home</h3></div></button>
                     </div>
                     <div class="row navig" id="profile">
-                        <button class="btn"><div class="ll"><i class="fa-solid fa-user"></i> <h3 class="rem d-inline-block" >Profile</h3></div></button>
+                        <button class="btn nav-button"><div class="ll"><i class="fa-solid fa-user"></i> <h3 class="rem d-inline-block" >Profile</h3></div></button>
                     </div>
                     <div class="row navig" id="chat">
-                        <button class="btn"><div class="ll"><i class="fa-solid fa-message"></i> <h3 class="rem d-inline-block">Chat</h3></div></button>
+                        <button class="btn nav-button"><div class="ll"><i class="fa-solid fa-message"></i> <h3 class="rem d-inline-block">Chat</h3></div></button>
                     </div>
                     <div class="row navig" id="setting">
-                        <button class="btn"><div class="ll"><i class="fa-solid fa-gear"></i> <h3 class="rem d-inline-block">Setting</h3></div></button>
+                        <button class="btn nav-button"><div class="ll"><i class="fa-solid fa-gear"></i> <h3 class="rem d-inline-block">Setting</h3></div></button>
                     </div>
                 </div>
                 <div class="row" id="logout">
-                    <button class="btn"><div class="ll"><i class="fa-solid fa-arrow-right-from-bracket"></i> <h3 class="rem" style="display: inline-block;">Logout</h3></div></button>
+                    <button class="btn nav-button"><div class="ll"><i class="fa-solid fa-arrow-right-from-bracket"></i> <h3 class="rem" style="display: inline-block;">Logout</h3></div></button>
                 </div>
             </div>
             <!-- main part -->
-            <div class="col-md-10" id="main">
+            <div class="col-md-10" id="main" style="display: block;" >
                 <div class="row" id="design">
                     <div class="col-12 col-lg-5" id="description">
                         <h1 id="main-header">Play Online Games <br> With Your <span>Friends</span></h1>
@@ -206,11 +206,11 @@
         </div>
 
     </div> 
-        <script src="scripts/login.js"></script>
         <script src="script.js"></script>
         <script src="/scripts/home.js"></script>
         <script src="/scripts/profile.js"></script>
         <script src="/scripts/chat.js"></script>
         <script src="/scripts/setting.js"></script>
+        <script src="scripts/login.js"></script>
 </body>
 </html>

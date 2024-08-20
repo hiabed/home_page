@@ -314,9 +314,9 @@ visibility */
     font-size: 20px;
 }
 
-#linkk {
+/* #linkk {
     font-size: 100px;
-}
+} */
 
 ::selection { /* pseudo element */
     background-color: rgb(136, 67, 136);
