@@ -202,7 +202,7 @@
     overflow-y: auto;
 }
 
-#msgs .my-msg {
+#msgs .my-msg, #msgs .friend-msg {
     margin-top: 12px;
     margin-right: 10px;
     width: fit-content;
@@ -220,13 +220,7 @@
     margin-left: 8px;
 }
 
-#msgs .friend-msg {
-    margin-top: 12px;
-    margin-right: 10px;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px 20px;
-    border-radius: 34px;
+#msgs .friend-msg { /*differ friend messages from my messages */
     background-color: #595959a8;
     align-self: flex-start; /* flex attribute for child.*/
 }
