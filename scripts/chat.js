@@ -11,7 +11,7 @@ const chatFunction = () => {
 
 chatButton.addEventListener("click", chatFunction);
 
-const data_example = async() => {
+const data_example = async() => { // get characters.
     try {
         const data = await fetch("https://dattebayo-api.onrender.com/characters");
         if (data.ok)
@@ -49,7 +49,7 @@ const data_characters = async() => {
 
 const sendMsg = document.querySelector("#something");
 
-sendMsg.addEventListener("keyup", (event)=> {
+const frontChat = (event)=> {
     if (event.key === "Enter") {
         // console.log(sendMsg.value);
         if (sendMsg.value != "friend" && sendMsg.value != "alaykum salam") {
@@ -66,6 +66,8 @@ sendMsg.addEventListener("keyup", (event)=> {
             sendMsg.value = "";
         }
     }
-})
+}
+
+sendMsg.addEventListener("keyup", frontChat);
 
 data_characters();
