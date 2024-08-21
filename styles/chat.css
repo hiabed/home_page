@@ -90,16 +90,6 @@
     left: 90px;
 }
 
-#messages {
-    background-color: rgba(0, 12, 45, 0.90);
-    border-radius: 10px;
-    box-shadow: 0 0 10px #0e1c1f;
-    width: 90%;
-    height: 75%;
-    margin: auto;
-    /* border: 2px solid aqua; */
-}
-
 #insert-msg {
     width: 85%;
     margin: auto;
@@ -184,26 +174,46 @@
     color: aquamarine;
 }
 
-#messages .my-msg {
-    margin-top: 15px;
-    width: fit-content;
-    height: fit-content;
-    padding: 5px 20px;
-    border-radius: 40%;
-    border: 2px solid rgb(62, 255, 213, 0.8);
-    position: relative;
-    left: 425px;
-    top: 15px;
+#messages {
+    background-color: rgba(0, 12, 45, 0.90);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0e1c1f;
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    overflow: auto;
 }
 
-#messages .friend-msg {
-    margin-top: 15px;
+#msgs {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#msgs .my-msg {
+    margin-top: 12px;
     width: fit-content;
-    height: 50px;
-    padding: 10px 20px;
-    border-radius: 40%;
-    border: 2px solid rgba(17, 77, 64, 0.8);
-    position: relative;
-    top: 15px;
-    left: 10px;
+    height: 38px;
+    padding: 5px 20px;
+    border-radius: 30%;
+    background-color: #252586;
+    align-self: flex-end; /* flex attribute for child.*/
+}
+
+#msgs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 8px;
+}
+
+#msgs .friend-msg {
+    margin-top: 12px;
+    width: fit-content;
+    height: 38px;
+    padding: 5px 20px;
+    border-radius: 30%;
+    background-color: #595959a8;
+    align-self: flex-start; /* flex attribute for child.*/
 }

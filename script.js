@@ -54,17 +54,15 @@ const sendMsg = document.querySelector("#something");
 sendMsg.addEventListener("keyup", (event)=> {
     if (event.key === "Enter") {
         // console.log(sendMsg.value);
-        if (sendMsg.value != "friend") {
+        if (sendMsg.value != "friend" && sendMsg.value != "alaykum salam") {
             const msg = document.createElement("div");
             msg.classList.add("my-msg");
-            document.querySelector("#messages").appendChild(msg);
+            document.querySelector("#msgs").appendChild(msg);
             msg.innerHTML = `${sendMsg.value}`;
-            const leftPosition = 425 - sendMsg.value.length + "px";
-            msg.style.left= leftPosition;
             sendMsg.value = "";
         } else {
             const msg = document.createElement("div");
-            document.querySelector("#messages").appendChild(msg);
+            document.querySelector("#msgs").appendChild(msg);
             msg.classList.add("friend-msg");
             msg.innerHTML = `${sendMsg.value}`;
             sendMsg.value = "";

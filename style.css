@@ -1,3 +1,7 @@
+/* flex box can work with parent and childs.
+=> parent: display:flex, justify-items, align-items etc....
+=> child: flex-grow:0 (default value), flex-shrink:1(default value), order  etc....;
+*/
 /* user-name (first last email) profile-pic score ranking Match history */
 /* fixed position in relation with the window */
 /* absolute position in relation with the first parent */
