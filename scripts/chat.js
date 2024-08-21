@@ -24,6 +24,12 @@ const data_example = async() => { // get characters.
     }
 }
 
+const container = document.querySelector("#msgs");
+
+const scrollToBottom = ()=> {
+    container.scrollTop = container.scrollHeight;
+}
+
 const data_characters = async() => {
     const characters = await data_example();
     characters.forEach(character => {
@@ -58,12 +64,14 @@ const frontChat = (event)=> {
             document.querySelector("#msgs").appendChild(msg);
             msg.innerHTML = `${sendMsg.value}`;
             sendMsg.value = "";
+            scrollToBottom();
         } else {
             const msg = document.createElement("div");
             document.querySelector("#msgs").appendChild(msg);
             msg.classList.add("friend-msg");
             msg.innerHTML = `${sendMsg.value}`;
             sendMsg.value = "";
+            scrollToBottom();
         }
     }
 }
