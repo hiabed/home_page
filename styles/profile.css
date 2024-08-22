@@ -77,8 +77,7 @@
     position: relative;
     top: 46px;
     background-image: url(/images/2.jpeg);
-    background-size: contain;
-    /* background-position-x: -561px; */
+    background-size: cover;
 }
 
 #statistics h1 {
