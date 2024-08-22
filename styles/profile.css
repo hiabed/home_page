@@ -74,7 +74,7 @@
     background-color: #7b45a645;
     box-shadow: 0 0 10px #4fb0c6;
     border-radius: 20px;
-    width: 740px;
+    width: 82vw;
     height: 75vh;
     margin: auto;
     position: relative;
@@ -135,14 +135,15 @@
 #user-picture {
     width: 128px;
     height: 128px;
-    border-radius: 50%;
-    border: 2px solid #0dcaf0;
-    box-shadow: 0 0 10px #4fb0c6;
-    margin: 0 auto;
+    /* border-radius: 50%; */
+    /* border: 2px solid #0dcaf0; */
+    box-shadow: 0 0 10px 40px #4fb0c6;
     position: relative;
-    bottom: 70px;
+    bottom: 40px;
+    left: 5%;
     background-image: url(/images/me.jpg);
     background-size: contain;
+    clip-path: polygon(51% 1%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 /* #user-picture > i {

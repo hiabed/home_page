@@ -24,8 +24,9 @@
     <div class="container-fluid">
         <div class="row">
             <!-- login part -->
-            <div class="row" id="parent" style="display: none;" > <!--  style="display: flex;" -->
+            <div class="row" id="parent" style="display: flex;" > <!--  style="display: flex;" -->
                 <div class="col-12 col-md-12 col-lg-6" id="one">
+                    <input type="hidden" id="csrf_token" name="csrfmiddlewaretoken">
                     <h1 class="mb-3">Let's play <i class="fa-solid fa-table-tennis-paddle-ball icon"></i></h1> <!-- with logo in right -->
                     <div class="d-grid gap-2 mb-4">
                         <button class="btn btn-secondary btn-lg intra">Log in with 42</button>
@@ -39,7 +40,7 @@
                     <p>Password:</p>
                     <div class="input-group mb-4">
                         <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" class="form-control form-control-lg psw" placeholder="Password">
+                        <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw">
                     </div>
                     <div class="d-grid gap-2">
                         <button class="btn btn-success btn-lg mb-3 login">Log in</button>
@@ -50,6 +51,7 @@
                     <img src="images/login-picture.png" alt="ping-pong image" id="image" class="img-fluid">
                 </div>
                 <div class="col-lg-6"  id="three">
+                    <!-- <input type="hidden" id="csrf_token" name="csrfmiddlewaretoken"> -->
                     <h1 class="mb-3" >join us! <i class="fa-regular fa-hand" id="hand"></i></h1> <!-- with logo in right -->
                     <div class="d-grid gap-2 mb-4">
                         <button class="btn btn-secondary btn-lg intra">Sign up with 42</button>
@@ -82,7 +84,7 @@
                 </div>
             </div>
             <!-- nav part -->
-            <div class="col-12 col-md-2" id="nav" style="display: block;" >
+            <div class="col-12 col-md-2" id="nav" style="display: none;" >
                 <div class="row" id="icon">
                     <img src="/images/logo.avif" alt="logo">
                 </div>
@@ -105,7 +107,7 @@
                 </div>
             </div>
             <!-- main part -->
-            <div class="col-md-10" id="main" style="display: block;" >
+            <div class="col-md-10" id="main" style="display: none;" >
                 <div class="row" id="design">
                     <div class="col-12 col-lg-5" id="description">
                         <h1 id="main-header">Play Online Games <br> With Your <span>Friends</span></h1>
@@ -132,8 +134,10 @@
             <!-- Profile part -->
             <div class="col-md-10" id="profile-part">
                 <div class="row">
-                    <div id="user-picture">
-                        <!-- <i class="fa-solid fa-user"></i> -->
+                    <div id="octagon">
+                        <div id="user-picture">
+                            <!-- <i class="fa-solid fa-user"></i> -->
+                        </div>
                     </div>
                     <div class="col-12">
                         <div class="row" id="user-info">

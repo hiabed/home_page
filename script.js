@@ -12,3 +12,4 @@ links.forEach ((link)=> {
         link.classList.add('link');
     })
 });
+
