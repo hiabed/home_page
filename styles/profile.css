@@ -103,13 +103,13 @@
 }
 
 #user-info {
-    width: 90%;
+    /* width: 90%; */
     height: var(--uInfo_height);
     margin: 0 auto;
     /* box-shadow: 0px 0px 10px #8525888f; */
-    position: relative;
-    bottom: 70px;
-    border-radius: 10px;
+    /* position: relative;
+    bottom: 40px;
+    border-radius: 10px; */
 }
 
 #user-info h1, #statistics h1 {
@@ -133,17 +133,25 @@
 }
 
 #user-picture {
+    margin: auto;
+    position: relative;
+    bottom: 17%;
     width: 128px;
     height: 128px;
-    /* border-radius: 50%; */
-    /* border: 2px solid #0dcaf0; */
-    box-shadow: 0 0 10px 40px #4fb0c6;
-    position: relative;
-    bottom: 40px;
-    left: 5%;
     background-image: url(/images/me.jpg);
     background-size: contain;
     clip-path: polygon(51% 1%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+#us {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 5%;
+}
+
+#my-picture {
+    height: 128px;
 }
 
 /* #user-picture > i {
@@ -163,15 +171,20 @@
 }
 
 #first {
-    width: 40%;
-    margin: 10px auto;
+    /* width: 40%; */
+    background-color: #4fb0c6;
+    /* margin: 10px auto; */
 }
 
 #second {
-    width: 30%;
-    margin: 10px auto;
+    /* width: 30%; */
+    background-color: yellow;
+    /* margin: 10px auto; */
 }
 
+#third {
+    background-color: red;
+}
 
 
 /* #profile-part > h2 {
