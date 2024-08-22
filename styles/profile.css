@@ -28,9 +28,6 @@
         height: 64px !important;
         bottom: 59px !important;
     }
-    #leaderboard {
-        height: 191px;
-    }
     #match-history {
         height: 191px;
     }
@@ -80,8 +77,8 @@
     position: relative;
     top: 46px;
     background-image: url(/images/2.jpeg);
-    background-size: cover;
-    background-position-x: -561px;
+    background-size: contain;
+    /* background-position-x: -561px; */
 }
 
 #statistics h1 {
@@ -89,14 +86,11 @@
     color: rgb(194, 223, 213);
 }
 
-#leaderboard {
-    border-top: 2px solid #9affec6b;
-    border-right: 2px solid #9affec6b;
+#user-info {
+    border-bottom: 2px solid white;
 }
 
 #match-history {
-    border-top: 1px solid gray;
-    border-top: 1px solid gray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,7 +199,7 @@
     /* width: 40%; */
     /* background-color: #4fb0c6; */
     /* margin: 10px auto; */
-    border-right: 1px solid gray;
+    border-right: 2px solid white;
 }
 
 #second {
@@ -214,7 +208,7 @@
     justify-content: center;
     gap: 3px;
     align-items: center;
-    border-right: 1px solid gray;
+    border-right: 2px solid white;
 }
 
 .progress {
