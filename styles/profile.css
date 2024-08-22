@@ -102,16 +102,6 @@
     border-top: 2px solid #9affec6b;
 }
 
-#user-info {
-    /* width: 90%; */
-    /* height: var(--uInfo_height);
-    margin: 0 auto; */
-    /* box-shadow: 0px 0px 10px #8525888f; */
-    /* position: relative;
-    bottom: 40px;
-    border-radius: 10px; */
-}
-
 #user-info h1, #statistics h1 {
     color: white !important;
     /* text-align: center; */
