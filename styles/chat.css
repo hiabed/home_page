@@ -147,19 +147,19 @@
     width: 5px;
 }
 
-#chats::-webkit-scrollbar {
+#chats::-webkit-scrollbar, #profile-part #statistics::-webkit-scrollbar {
     width: 10px;
 }
 
-#chats::-webkit-scrollbar-track, #msgs::-webkit-scrollbar-track {
+#chats::-webkit-scrollbar-track, #msgs::-webkit-scrollbar-track, #profile-part #statistics::-webkit-scrollbar-track {
     background: gray;
 }
 
-#chats::-webkit-scrollbar-thumb, #msgs::-webkit-scrollbar-thumb {
+#chats::-webkit-scrollbar-thumb, #msgs::-webkit-scrollbar-thumb, #profile-part #statistics::-webkit-scrollbar-thumb {
     background: rgb(32, 44, 80);
 }
 
-#chats::-webkit-scrollbar-thumb:hover, #msgs::-webkit-scrollbar-thumb:hover {
+#chats::-webkit-scrollbar-thumb:hover, #msgs::-webkit-scrollbar-thumb:hover, #profile-part #statistics::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 12, 45, 0.5);
 }
 
