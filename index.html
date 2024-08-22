@@ -24,7 +24,7 @@
     <div class="container-fluid">
         <div class="row">
             <!-- login part -->
-            <div class="row" id="parent" style="display: flex;" > <!--  style="display: flex;" -->
+            <div class="row" id="login-parent" style="display: flex;" > <!--  style="display: flex;" -->
                 <div class="col-12 col-md-12 col-lg-6" id="one">
                     <input type="hidden" id="csrf_token" name="csrfmiddlewaretoken">
                     <h1 class="mb-3">Let's play <i class="fa-solid fa-table-tennis-paddle-ball icon"></i></h1> <!-- with logo in right -->
@@ -43,7 +43,7 @@
                         <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw">
                     </div>
                     <div class="d-grid gap-2">
-                        <button class="btn btn-success btn-lg mb-3 login">Log in</button>
+                        <button class="btn btn-success btn-lg mb-3 login-btn">Log in</button>
                     </div>
                     <p id="no-account">Don't have an account? <a id="signup" href="#">Sign up</a></p>
                 </div>
@@ -78,7 +78,7 @@
                         <input type="password" class="form-control form-control-lg psw" placeholder="Password">
                     </div>
                     <div class="d-grid gap-2">
-                        <button class="btn btn-success btn-lg mb-3 login">Sign up</button>
+                        <button class="btn btn-success btn-lg mb-3 login-btn">Sign up</button>
                     </div>
                     <p id="no-account">Already have an accout? <a id="signin" href="#">Log in</a></p>
                 </div>
