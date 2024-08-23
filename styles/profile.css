@@ -121,6 +121,7 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 25px;
+    background-color: #051f35c2;
 }
 
 #me, #enemy {
@@ -164,7 +165,9 @@
     height: 128px;
     background-image: url(/images/me.jpg);
     background-size: contain;
-    clip-path: polygon(51% 1%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px #448ca2;
+    border: solid #217788 4px;
 }
 
 #us {
@@ -215,7 +218,7 @@
 }
 
 .progress-bar-animated {
-    background-color: #6d136d;
+    background-color: #0a496b;
 }
 
 /* #profile-part > h2 {

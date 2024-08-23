@@ -10,7 +10,8 @@
     box-shadow: 0 0 10px #4f868a;
     display: none;
     width: 80%;
-    max-width: 850px;
+    max-width: 1200px;
+    min-width: 500px;
     height: 70vh;
     border-radius: 10px;
     margin: auto;
@@ -212,6 +213,7 @@
     border-radius: 34px;
     background-color: #252586;
     align-self: flex-end;
+    word-wrap: break-word;
 }
 
 #msgs {
