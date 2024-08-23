@@ -213,6 +213,10 @@
     border-right: 2px solid white;
 }
 
+#third {
+    gap: 20%;
+}
+
 .progress {
     width: 100%;
 }

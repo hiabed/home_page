@@ -68,36 +68,45 @@
     width: 100%;
 }
 
+#secondd {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#user-status {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+#user-status h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#user-status p {
+    font-size: 13px;
+    color: white;
+    opacity: 50%;
+    position: relative;
+    bottom: 5px;
+}
+
 #secondd #chat-pic {
     width: 64px;
     height: 64px;
     border-radius: 50%;
     border: 2px solid aqua;
-    position: relative;
+    /* position: relative;
     top: 10%;
-    left: 3%;
+    left: 3%; */
     background-image: url(../images/me.jpg);
     background-size: cover;
-    background-position-x: -10px;
+    /* background-position-x: -10px; */
     /* background-position-y: 0px; */
 }
 
-#secondd h3 {
-    font-size: 20px;
-    font-weight: bold;
-    position: relative;
-    bottom: 55%;
-    left: 90px;
-}
-
-#secondd p {
-    font-size: 13px;
-    color: white;
-    opacity: 50%;
-    position: relative;
-    bottom: 64%;
-    left: 90px;
-}
 
 #insert-msg {
     width: 85%;
