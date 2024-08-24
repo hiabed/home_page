@@ -22,7 +22,7 @@ const chatPart = document.querySelector("#chat-part");
 const setting = document.querySelector("#setting-part");
 
 loginBtn.addEventListener("click", ()=> {
-    navBar.style.display = "block";
+    navBar.style.display = "flex";
     mainPart.style.display = "block";
     loginPart.style.display = "none";
 })
@@ -33,7 +33,7 @@ logoutBtn.addEventListener("click", ()=> {
     setting.style.display = "none";
     chatPart.style.display = "none";
     profilePart.style.display = "none";
-    navBar.style.display = "none";
+    navBar.style.display = "none !important";
     mainPart.style.display = "none";
     loginPart.style.display = "flex";
 })
