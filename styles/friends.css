@@ -11,7 +11,7 @@
     justify-content: center;
     border: 1px solid rgb(96 102 125);
     gap: 15px;
-    width: calc(100vw - 230px); /* maybe need to change later;
+    width: calc(100vw - 230px); /* maybe need to change later;*/
     margin: 0 auto;
 }
 
