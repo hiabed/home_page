@@ -128,8 +128,19 @@
     height: 64px;
     width: 64px;
     border: 2px solid aqua;
-    transform: rotate(45deg);
+
 }
+
+#me {
+    background-image: url(../images/2.jpeg);
+    background-size: cover;
+}
+
+#enemy {
+    background-image: url(../images/1.jpeg);
+    background-size: cover;
+}
+
 
 #vs i {
     font-size: 30px;
