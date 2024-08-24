@@ -8,17 +8,18 @@
 
 #nav-bar {
     display: flex;
+    justify-content: center;
+    border: 1px solid rgb(96 102 125);
     gap: 15px;
-    width: fit-content;
+    width: calc(100vw - 230px); /* maybe need to change later;
     margin: 0 auto;
-    /* border: 1px rgb(150, 150, 150) solid; */
 }
 
 #nav-bar .btn {
     color: white;
     font-size: 20px;
     width: 150px;
-    background-color: #391363;
+    /* background-color: #391363; */
 }
 
 #nav-bar .btn:hover {
