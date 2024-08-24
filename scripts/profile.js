@@ -5,6 +5,8 @@ const profile = () => {
     main.style.display = "none";
     settingPage.style.display = "none";
     chatPage.style.display = "none";
+    rankPart.style.display = "none";
+    friendsPart.style.display = "none";
     profileId.style.display = "block";
     // document.querySelector("#profile-img").style.display = "none";
 }

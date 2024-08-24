@@ -1,9 +1,28 @@
 #friends-part {
     display: none;
-    width: 250px;
+    /* width: 250px;
     height: 150px;
     margin: auto;
-    border: 3px solid rgb(0, 255, 255);
+    border: 3px solid rgb(0, 255, 255); */
+}
+
+#nav-bar {
+    display: flex;
+    gap: 15px;
+    width: fit-content;
+    margin: 0 auto;
+    /* border: 1px rgb(150, 150, 150) solid; */
+}
+
+#nav-bar .btn {
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    background-color: #391363;
+}
+
+#nav-bar .btn:hover {
+    background-color: #42424294;
 }
 
 #friends-part > h2 {
