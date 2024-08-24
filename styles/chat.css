@@ -69,6 +69,7 @@
 }
 
 #secondd {
+    padding-left: 2%;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -162,15 +163,16 @@
 }
 
 #chats::-webkit-scrollbar-track, #msgs::-webkit-scrollbar-track, #profile-part #statistics::-webkit-scrollbar-track {
-    background: gray;
+    background: rgba(0, 12, 45, 0.5);
 }
 
 #chats::-webkit-scrollbar-thumb, #msgs::-webkit-scrollbar-thumb, #profile-part #statistics::-webkit-scrollbar-thumb {
-    background: rgb(32, 44, 80);
+    background: gray;
+    
 }
 
 #chats::-webkit-scrollbar-thumb:hover, #msgs::-webkit-scrollbar-thumb:hover, #profile-part #statistics::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 12, 45, 0.5);
+    background-color: rgba(151, 151, 151, 0.6);
 }
 
 #chats div {
