@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/friends.css">
+    <link rel="stylesheet" href="/styles/rank.css">
     <link rel="stylesheet" href="/styles/profile.css">
     <link rel="stylesheet" href="/styles/chat.css">
     <link rel="stylesheet" href="/styles/setting.css">
@@ -93,6 +95,12 @@
                 <div class="row navig" id="profile">
                     <button class="btn nav-button"><div class="ll"><i class="fa-solid fa-user"></i> <h3 class="rem d-inline-block" >Profile</h3></div></button>
                 </div>
+                <div class="row navig" id="friends">
+                    <button class="btn nav-button"><div class="ll"><i class="fa-solid fa-user-group"></i> <h3 class="rem d-inline-block" >Friends</h3></div></button>
+                </div>
+                <div class="row navig" id="rank">
+                    <button class="btn nav-button"><div class="ll"><i class="fa-solid fa-ranking-star"></i> <h3 class="rem d-inline-block" >Rank</h3></div></button>
+                </div>
                 <div class="row navig" id="chat">
                     <button class="btn nav-button"><div class="ll"><i class="fa-solid fa-message"></i> <h3 class="rem d-inline-block">Chat</h3></div></button>
                 </div>
@@ -165,7 +173,7 @@
                             <div class="col-12" id="match-history">
                                 <h1>Match History</h1>
                                 <div class="game-record"> <!-- flex box -->
-                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Won</h2>
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Victory</h2>
                                     <div id="match">
                                         <div id="me">
                                         </div>
@@ -177,7 +185,7 @@
                                     <h2 id="score-pts">+30pts</h2>
                                 </div>
                                 <div class="game-record"> <!-- flex box -->
-                                    <h2 id="win-lost" style="color: red; text-decoration: line-through;">Lost</h2>
+                                    <h2 id="win-lost" style="color: red; text-decoration: line-through;">Defeated</h2>
                                     <div id="match">
                                         <div id="me"></div>
                                         <div id="vs">
@@ -188,7 +196,7 @@
                                     <h2 id="score-pts">-15pts</h2>
                                 </div>
                                 <div class="game-record"> <!-- flex box -->
-                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Won</h2>
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Victory</h2>
                                     <div id="match">
                                         <div id="me"></div>
                                         <div id="vs">
@@ -199,7 +207,7 @@
                                     <h2 id="score-pts">+30pts</h2>
                                 </div>
                                 <div class="game-record"> <!-- flex box -->
-                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Won</h2>
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Victory</h2>
                                     <div id="match">
                                         <div id="me"></div>
                                         <div id="vs">
@@ -210,7 +218,7 @@
                                     <h2 id="score-pts">+30pts</h2>
                                 </div>
                                 <div class="game-record"> <!-- flex box -->
-                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Won</h2>
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Victory</h2>
                                     <div id="match">
                                         <div id="me"></div>
                                         <div id="vs">
@@ -221,7 +229,7 @@
                                     <h2 id="score-pts">+30pts</h2>
                                 </div>
                                 <div class="game-record"> <!-- flex box -->
-                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Won</h2>
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Victory</h2>
                                     <div id="match">
                                         <div id="me"></div>
                                         <div id="vs">
@@ -232,7 +240,7 @@
                                     <h2 id="score-pts">+30pts</h2>
                                 </div>
                                 <div class="game-record"> <!-- flex box -->
-                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Won</h2>
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Victory</h2>
                                     <div id="match">
                                         <div id="me"></div>
                                         <div id="vs">
@@ -283,10 +291,18 @@
             <div class="col-12 col-md-10" id="setting-part">
                 <h2>Setting page</h2>
             </div>
+            <div class="col-12 col-md-10" id="friends-part">
+                <h2>Friends Page</h2>
+            </div>
+            <div class="col-12 col-md-10" id="rank-part">
+                <h2>Rank Page</h2>
+            </div>
         </div>
 
     </div> 
         <script src="script.js"></script>
+        <script src="/scripts/friends.js"></script>
+        <script src="/scripts/rank.js"></script>
         <script src="/scripts/home.js"></script>
         <script src="/scripts/profile.js"></script>
         <script src="/scripts/chat.js"></script>
