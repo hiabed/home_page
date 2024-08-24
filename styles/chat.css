@@ -1,8 +1,14 @@
-
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 575px) {
     #chat-part {
         margin-top: 10% !important;
         width: 100% !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #chat-part {
+        margin-top: 10% !important;
+        width: 73% !important;
     }
 }
 
