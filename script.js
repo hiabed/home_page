@@ -33,7 +33,7 @@ logoutBtn.addEventListener("click", ()=> {
     setting.style.display = "none";
     chatPart.style.display = "none";
     profilePart.style.display = "none";
-    navBar.style.display = "none !important";
+    navBar.style.display = "none";
     mainPart.style.display = "none";
     loginPart.style.display = "flex";
 })
