@@ -128,7 +128,8 @@
 }
 
 .unfriend .btn {
-    background-color: #dc35459e;
+    background-color: #dc3545b0;
+    box-shadow: 0 0 10px #7d1717;
     color: whitesmoke;
 }
 
