@@ -97,6 +97,7 @@
 }
 
 #user-info h1, #statistics h1 {
+    height: 35px;
     color: white !important;
     font-size: 30px;
     width: fit-content;
@@ -107,12 +108,20 @@
 #profile-part #statistics {
     /* border: 2px solid red; */
     height: calc(100vh - var(--uInfo_height) - 27vh);
+    /* overflow-y: auto; */
+}
+
+#games-container {
     overflow-y: auto;
+    height: calc(100vh - var(--uInfo_height) - 27vh - 35px - 2px - 20px); /*2px border 20px gap */
+    width: 100%;
+    /* margin: 0 auto !important; */
 }
 
 .game-record {
     height: 100px;
     width: 90%;
+    margin: auto;
     border: 1px solid aqua;
     border-radius: 5px;
     box-shadow: 0 0 7px aqua;
