@@ -9,6 +9,9 @@
     #icon {
         display: none !important;
     }
+    #nav-bar .btn {
+        font-size: 15px !important;
+    }
 }
 
 #friends-part {
@@ -34,7 +37,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(96 102 125);
-    gap: 15px;
+    gap: 3%;
     height: 50px;
     margin: 0 auto 20px auto;
 }
@@ -42,8 +45,7 @@
 #nav-bar .btn {
     color: white;
     font-size: 20px;
-    width: 150px;
-    /* background-color: #391363; */
+    width: fit-content !important;
 }
 
 #nav-bar .btn:not(.styled-nav-btn):hover{

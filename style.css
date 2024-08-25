@@ -115,7 +115,7 @@ visibility */
     }
     #nav {
         flex-direction: row !important;
-        height: 11vh !important;
+        height: 7vh !important;
         max-width: 100% !important;
         justify-content: center;
         /* align-items: center; */
