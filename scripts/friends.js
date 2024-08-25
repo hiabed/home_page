@@ -11,3 +11,14 @@ const friendsFunc = () => {
 }
 
 friendsBtn.addEventListener("click", friendsFunc);
+
+// nav manipulation style.
+const frdNavBtns = document.querySelectorAll(".frd-nav-btn");
+frdNavBtns[0].classList.add('styled-nav-btn');
+
+frdNavBtns.forEach ((frdNavBtn)=> {
+    frdNavBtn.addEventListener("click", (event)=> {
+        frdNavBtns.forEach (frdNavBtn => {frdNavBtn.classList.remove('styled-nav-btn')});
+        frdNavBtn.classList.add('styled-nav-btn');
+    })
+});

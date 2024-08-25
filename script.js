@@ -13,17 +13,6 @@ sideBtns.forEach ((sideBtn)=> {
     })
 });
 
-const frdNavBtns = document.querySelectorAll(".frd-nav-btn");
-frdNavBtns[0].classList.add('styled-nav-btn');
-
-frdNavBtns.forEach ((frdNavBtn)=> {
-    frdNavBtn.addEventListener("click", (event)=> {
-        frdNavBtns.forEach (frdNavBtn => {frdNavBtn.classList.remove('styled-nav-btn')});
-        frdNavBtn.classList.add('styled-nav-btn');
-    })
-});
-
-
 // switch from login to home page.
 const loginBtn = document.querySelector(".login-btn");
 const loginPart = document.querySelector("#login-parent");
