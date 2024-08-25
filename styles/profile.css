@@ -131,6 +131,7 @@
     align-items: center;
     gap: 25px;
     background-color: #051f35c2;
+    margin-bottom: 20px;
 }
 
 #me, #enemy {
