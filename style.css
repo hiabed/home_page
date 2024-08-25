@@ -171,7 +171,7 @@ visibility */
         width: fit-content !important;
     }
     #nav {
-        max-width: 150px !important;
+        max-width: 16.66666667% !important;
     }
     #icon > img {
         height: 80px !important;
