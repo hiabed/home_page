@@ -453,10 +453,9 @@ a, button {
     padding-top: 8px;
 }
 
-/* .btn {
-    background-color: #6d349c11;
+.btn {
     border: none;
-} */
+}
 /*hover effect for buttons without 'link' */
 .btn:not(.link, .accept, .refuse):hover {
     background-color: rgba(83, 83, 83, 0.473);
