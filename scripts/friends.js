@@ -22,3 +22,25 @@ frdNavBtns.forEach ((frdNavBtn)=> {
         frdNavBtn.classList.add('styled-nav-btn');
     })
 });
+
+const myFriends = document.querySelector("#my-friends");
+const requestsDiv = document.querySelector("#requests");
+const suggestions = document.querySelector("#suggestions");
+
+frdNavBtns[0].addEventListener("click", (event)=> {
+    myFriends.style.display = "flex";
+    suggestions.style.display = "none";
+    requestsDiv.style.display = "none";
+})
+
+frdNavBtns[1].addEventListener("click", ()=> {
+    myFriends.style.display = "none";
+    suggestions.style.display = "none";
+    requestsDiv.style.display = "flex";
+})
+
+frdNavBtns[2].addEventListener("click", ()=> {
+    myFriends.style.display = "none";
+    suggestions.style.display = "flex";
+    requestsDiv.style.display = "none";
+})
