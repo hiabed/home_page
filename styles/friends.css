@@ -1,3 +1,16 @@
+@media (min-width: 0px) and (max-width: 575px) {
+    #friends-part {
+        /* margin-top: 10% !important; */
+        width: 100vw !important;
+    }
+    #profile-img {
+        display: none;
+    }
+    #icon {
+        display: none !important;
+    }
+}
+
 #friends-part {
     display: none;
     overflow-y: auto;
@@ -31,7 +44,7 @@
     /* background-color: #391363; */
 }
 
-#nav-bar .btn:hover {
+#nav-bar .btn:not(.styled-nav-btn):hover{
     background-color: #42424294;
 }
 
@@ -117,4 +130,9 @@
 .unfriend .btn {
     background-color: #dc35459e;
     color: whitesmoke;
+}
+
+.styled-nav-btn {
+    background-color: #391363 !important;
+    box-shadow: 0 0 10px #391363 !important;
 }

@@ -58,7 +58,7 @@ const data_characters = async() => {
 const sendMsg = document.querySelector("#something");
 
 const frontChat = (event)=> {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && sendMsg.value != "") {
         // console.log(sendMsg.value);
         if (sendMsg.value != "friend" && sendMsg.value != "alaykum salam") {
             const msg = document.createElement("div");
