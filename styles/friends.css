@@ -76,7 +76,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
 .friend-img, .frd-sug-img, .frd-req-img {
@@ -96,7 +96,7 @@
     top: 8px;
 }
 
-.friend-infos h4, .frd-sug-infos h4 {
+.friend-infos h4, .frd-sug-infos h4, .frd-req-infos h4 {
     font-size: 20px;
 }
 .friend-infos p, .frd-sug-infos p, .frd-req-infos p {
@@ -111,7 +111,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
 .friend-statistics span, .frd-sug-statistics span, .frd-req-statistics span {
@@ -119,7 +119,7 @@
     font-size: 20px;
 }
 
-.friend-statistics h4, .frd-sug-statistics h4 {
+.friend-statistics h4, .frd-sug-statistics h4, .frd-req-statistics h4 {
     color: white;
     font-size: 20px;
 }
@@ -162,4 +162,18 @@
     display: flex;
     margin: auto;
     gap: 20px;
+}
+
+.wins, .loses, .score {
+    display: flex;
+    gap: 60px;
+}
+
+.wins .pts {
+    position: relative;
+    left: 1px;
+}
+
+.value {
+    opacity: 0.5;
 }
