@@ -7,7 +7,7 @@ const rankFunct = () => {
     chatPage.style.display = "none";
     profileId.style.display = "none";
     friendsPart.style.display = "none";
-    rankPart.style.display = "block";
+    rankPart.style.display = "flex";
 }
 
 rankBtn.addEventListener("click", rankFunct);
