@@ -74,8 +74,6 @@
     width: 75vw;
     height: 75vh;
     margin: auto;
-    position: relative;
-    top: 46px;
     background-image: url(/images/2.jpeg);
     background-size: cover;
 }
