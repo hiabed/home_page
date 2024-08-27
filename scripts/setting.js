@@ -27,23 +27,23 @@ settingNavBtn.forEach ((frdNavBtn)=> {
 
 const profileSetting = document.querySelector("#profile-setting");
 const logSec = document.querySelector("#log-sec");
-const options = document.querySelector("#options");
+const general = document.querySelector("#general");
 
 settingNavBtn[0].addEventListener("click", (event)=> {
     profileSetting.style.display = "flex";
-    options.style.display = "none";
+    general.style.display = "none";
     logSec.style.display = "none";
 })
 
 settingNavBtn[1].addEventListener("click", ()=> {
     profileSetting.style.display = "none";
-    options.style.display = "none";
+    general.style.display = "none";
     logSec.style.display = "flex";
 })
 
 settingNavBtn[2].addEventListener("click", ()=> {
     profileSetting.style.display = "none";
-    options.style.display = "flex";
+    general.style.display = "flex";
     logSec.style.display = "none";
 })
 

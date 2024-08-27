@@ -21,7 +21,7 @@
     width: fit-content !important;
 }
 
-#profile-setting, #log-sec, #options {
+#profile-setting {
     overflow-y: auto;
     height: calc(100vh - 50px - 20px); /* 50px height of nav-bar 20px margin-bottom of nav-bar */
     width: 100%;
@@ -73,7 +73,7 @@
     top: 20px;
 }
 
-.separator {
+#profile-header .separator {
     width: 150%;
     display: flex;
     gap: 30px;
@@ -86,15 +86,30 @@
 }
 
 .separator p {
-    width: 150px;
+    width: 190px;
+    font-weight: bold;
 }
 
-#save-btn {
+#last-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#save-btn, #save-btn2 {
     border: 1px #198754 solid;
 }
 
-#save-btn:hover {
+#save-btn:hover, #save-btn2:hover {
     background-color: #198754;
+}
+
+#delete-btn {
+    width: fit-content;
+    border: 1px #871919 solid;
+}
+
+#delete-btn:hover {
+    background-color: #871919;
 }
 
 #cancel-btn {
@@ -109,6 +124,14 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+#log-sec {
+    display: none;
+}
+
+#log-sec-container .account-info {
+    margin: 10px 30px;
 }
 
 .account-info input {
@@ -127,3 +150,66 @@
     gap: 15px;
 }
 
+#log-sec-container {
+    width: 60%;
+}
+
+.account-info .separator {
+    margin-top: 20px;
+    height: 25px;
+    width: 150%;
+    display: flex;
+    gap: 30px;
+}
+
+.account-info p {
+    width: 160px;
+    font-weight: bold;
+}
+
+#general {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#switch-mod {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#first-sep, #second-sep {
+    margin-top: 10px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#first-sep hr {
+    width: 40%;
+}
+
+#second-sep hr {
+    width: 37%;
+}
+
+#language {
+    display: flex;
+    gap: 20px;
+}
+
+#language select {
+    display: block;
+    height: 30px;
+    width: 135px;
+    font-size: 12px;
+}
+
+#check-box {
+    display: flex;
+
+}
