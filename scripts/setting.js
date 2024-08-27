@@ -46,3 +46,12 @@ settingNavBtn[2].addEventListener("click", ()=> {
     options.style.display = "flex";
     themes.style.display = "none";
 })
+
+// upload button logic;
+
+const uploadBtn = document.querySelector("#change-img");
+const fileInput = document.querySelector("#file-input");
+
+uploadBtn.addEventListener("click", ()=> {
+    fileInput.click();
+})

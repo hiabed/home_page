@@ -21,6 +21,8 @@ const mainPart = document.querySelector("#main");
 const profilePart = document.querySelector("#profile-part");
 const chatPart = document.querySelector("#chat-part");
 const setting = document.querySelector("#setting-part");
+const friends = document.querySelector("#friends-part");
+
 loginBtn.addEventListener("click", ()=> {
     navBar.style.display = "flex";
     mainPart.style.display = "block";
@@ -35,5 +37,6 @@ logoutBtn.addEventListener("click", ()=> {
     profilePart.style.display = "none";
     navBar.style.display = "none";
     mainPart.style.display = "none";
+    friends.style.display = "none";
     loginPart.style.display = "flex";
 })

@@ -21,12 +21,107 @@
     width: fit-content !important;
 }
 
-#profile-setting, #themes, #options {
+#profile-setting, #log-sec, #options {
     overflow-y: auto;
     height: calc(100vh - 50px - 20px); /* 50px height of nav-bar 20px margin-bottom of nav-bar */
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 20px;
 }
+
+#setting-pic {
+    background-image: url(/images/me.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+}
+
+#second-container .btn {
+    border: 1px solid rgba(41, 201, 212, 0.5);
+    color: white;
+}
+
+#second-container .btn:hover {
+    background-color: rgba(17, 79, 83, 0.5);
+}
+
+#profile-header {
+    margin: 0 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#profile-header h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#first-container {
+    display: flex;
+    gap: 15px;
+}
+
+#setting-pic-infos {
+    position: relative;
+    top: 20px;
+}
+
+#separator {
+    width: 150%;
+    display: flex;
+    gap: 30px;
+}
+
+#separator hr {
+    width: 80%;
+    position: relative;
+    bottom: 5px;
+}
+
+#separator p {
+    width: 150px;
+}
+
+#save-btn {
+    border: 1px #198754 solid;
+}
+
+#save-btn:hover {
+    background-color: #198754;
+}
+
+#cancel-btn {
+    border: 1px #6c757d solid;
+}
+
+#cancel-btn:hover {
+    background-color: #6c757d;
+}
+
+#account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#account-info input {
+    background-color: rgb(0, 21, 52);
+}
+
+#account-info .form-control:focus {
+    border-color: aqua;
+    box-shadow: 0 0 .25rem aqua;
+}
+
+#save-changes {
+    display: flex;
+    gap: 15px;
+}
+
