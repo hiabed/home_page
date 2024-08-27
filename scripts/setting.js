@@ -26,25 +26,25 @@ settingNavBtn.forEach ((frdNavBtn)=> {
 });
 
 const profileSetting = document.querySelector("#profile-setting");
-const themes = document.querySelector("#themes");
+const logSec = document.querySelector("#log-sec");
 const options = document.querySelector("#options");
 
 settingNavBtn[0].addEventListener("click", (event)=> {
     profileSetting.style.display = "flex";
     options.style.display = "none";
-    themes.style.display = "none";
+    logSec.style.display = "none";
 })
 
 settingNavBtn[1].addEventListener("click", ()=> {
     profileSetting.style.display = "none";
     options.style.display = "none";
-    themes.style.display = "flex";
+    logSec.style.display = "flex";
 })
 
 settingNavBtn[2].addEventListener("click", ()=> {
     profileSetting.style.display = "none";
     options.style.display = "flex";
-    themes.style.display = "none";
+    logSec.style.display = "none";
 })
 
 // upload button logic;
