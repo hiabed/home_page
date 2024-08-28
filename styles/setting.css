@@ -213,3 +213,26 @@
     display: flex;
 
 }
+
+@media (min-width: 0px) and (max-width: 575px) {
+    #setting-part {
+        width: 100vw !important;
+    }
+    #log-sec-container {
+        width: 100% !important;
+    }
+    #log-sec {
+        width: 100vw;
+    }
+    #log-sec-container .separator {
+        width: 100% !important;
+    }
+    #general {
+        align-items: start;
+        min-width: 340px;
+    }
+
+    #switch-mod, #language, #dif, #check-box {
+        margin-left: 20px;
+    }
+}
