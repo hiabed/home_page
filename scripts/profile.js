@@ -7,7 +7,7 @@ const profile = () => {
     chatPage.style.display = "none";
     rankPart.style.display = "none";
     friendsPart.style.display = "none";
-    profileId.style.display = "block";
+    profileId.style.display = "flex";
     // document.querySelector("#profile-img").style.display = "none";
 }
 

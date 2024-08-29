@@ -68,12 +68,22 @@
 
 #profile-part {
     display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 75vw;
+    height: 100vh;
+    margin: auto;
+}
+
+#profile-container {
     background-color: #7b45a645;
     box-shadow: 0 0 5px #4fb0c6;
     border-radius: 20px;
     width: 75vw;
     height: 75vh;
-    margin: auto;
+
     background-image: url(/images/2.jpeg);
     background-size: cover;
 }
