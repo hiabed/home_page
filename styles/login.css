@@ -8,7 +8,7 @@
     font-size: 50px;
 }
 
-#un, #psw, #uname, #email {
+#un, #psw, #uname, #email, #psswd1, #psswd2, #fname, #lname {
     color: white !important;
     background-color: rgb(35, 21, 70) !important;
     border: none;

@@ -36,12 +36,12 @@
                     <p>Username:</p>
                     <div class="input-group mb-3">
                         <span class="input-group-text input-group-left"><i class="fa-regular fa-user"></i></span>
-                        <input type="text" class="form-control form-control-lg" placeholder="Username" id="un">
+                        <input type="text" class="form-control form-control-lg" placeholder="Username" id="un" required>
                     </div>
                     <p>Password:</p>
                     <div class="input-group mb-4">
                         <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw">
+                        <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw" required>
                     </div>
                     <div class="d-grid gap-2">
                         <button class="btn btn-success btn-lg mb-3 login-btn">Log in</button>
@@ -52,36 +52,48 @@
                     <img src="images/login-picture.png" alt="ping-pong image" id="image" class="img-fluid">
                 </div>
                 <div class="col-lg-6"  id="three">
-                    <!-- <input type="hidden" id="csrf_token" name="csrfmiddlewaretoken"> -->
-                    <h1 class="mb-3" >join us! <i class="fa-regular fa-hand" id="hand"></i></h1> <!-- with logo in right -->
-                    <div class="d-grid gap-2 mb-4">
-                        <button class="btn btn-secondary btn-lg intra">Sign up with 42</button>
-                    </div>
-                    <hr>
-                    <p>Email:</p>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text input-group-left"><i class="fa-regular fa-envelope"></i></i></span>
-                        <input type="email" class="form-control form-control-lg" placeholder="Email" id="email">
-                    </div>
-                    <p>Username:</p>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text input-group-left"><i class="fa-regular fa-user"></i></span>
-                        <input type="text" class="form-control form-control-lg" placeholder="Username" id="uname">
-                    </div>
-                    <p>Password:</p>
-                    <div class="input-group mb-4">
-                        <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" class="form-control form-control-lg psw" placeholder="Password">
-                    </div>
-                    <p>Retype password:</p>
-                    <div class="input-group mb-4">
-                        <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" class="form-control form-control-lg psw" placeholder="Password">
-                    </div>
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-success btn-lg mb-3 login-btn">Sign up</button>
-                    </div>
-                    <p id="no-account">Already have an accout? <a id="signin" href="#">Log in</a></p>
+                    <form id="register-form">
+                        <!-- <input type="hidden" id="csrf_token" name="csrfmiddlewaretoken"> -->
+                        <h1 class="mb-3" >join us! <i class="fa-regular fa-hand" id="hand"></i></h1> <!-- with logo in right -->
+                        <div class="d-grid gap-2 mb-4">
+                            <button class="btn btn-secondary btn-lg intra">Sign up with 42</button>
+                        </div>
+                        <hr>
+                        <p>Email:</p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text input-group-left"><i class="fa-regular fa-envelope"></i></i></span>
+                            <input name="email" type="email" class="form-control form-control-lg" placeholder="Email" id="email" required>
+                        </div>
+                        <p>Username:</p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text input-group-left"><i class="fa-regular fa-user"></i></span>
+                            <input name="username" type="text" class="form-control form-control-lg" placeholder="Username" id="uname" required>
+                        </div>
+                        <p>First Name:</p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text input-group-left"><i class="fa-regular fa-user"></i></span>
+                            <input name="firstname" type="text" class="form-control form-control-lg" placeholder="First Name" id="fname" required>
+                        </div>
+                        <p>Last Name:</p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text input-group-left"><i class="fa-regular fa-user"></i></span>
+                            <input name="lastname" type="text" class="form-control form-control-lg" placeholder="Last Name" id="lname" required>
+                        </div>
+                        <p>Password:</p>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
+                            <input name="password1" type="password" class="form-control form-control-lg psw" placeholder="Password" id="psswd1" required>
+                        </div>
+                        <p>Retype password:</p>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
+                            <input name="password2" type="password" class="form-control form-control-lg psw" placeholder="Password" id="psswd2" required>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-success btn-lg mb-3 login-btn" id="sign-up">Sign up</button>
+                        </div>
+                        <p id="no-account">Already have an accout? <a id="signin" href="#">Log in</a></p>
+                    </form>
                 </div>
             </div>
             <!-- nav part -->
@@ -1486,5 +1498,7 @@
         <script src="/scripts/chat.js"></script>
         <script src="/scripts/setting.js"></script>
         <script src="scripts/login.js"></script>
+        <script src="/scripts/oauth.js"></script>
+        <script src= "/scripts/register.js" ></script>
 </body>
 </html>
