@@ -8,6 +8,8 @@
     }
     #profile-part {
         width: 100vw !important;
+        margin-top: 100px !important;
+        height: 640px !important;
     }
     #user-picture {
         margin-top: 10px !important;
@@ -23,14 +25,28 @@
         flex-direction: column;
     }
     #games-container {
-        height: 40% !important;
+        height: 100% !important;
     }
     #profile-container {
-        height: 91vh !important;
+        height: 768px !important;
         width: 100vw !important;
     }
     #profile-part #statistics {
         margin-top: 20px;
+        height: 410px !important;
+    }
+    .game-record {
+        width: 98% !important;
+        gap: 0 !important;
+    }
+    #match {
+        gap: 10px !important;
+    }
+    .game-record h2 {
+        font-size: 16px;
+    }
+    #match-history {
+        height: 400px !important;
     }
 }
 
