@@ -22,6 +22,9 @@
     #match-history {
         height: 100% !important;
     }
+    #second {
+        border: none !important;
+    }
     /* #profile-part {
         width: 100vw !important;
         margin-top: 100px !important;
@@ -46,6 +49,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        border: none !important;
     }
     #user-info {
         display: flex;
@@ -69,6 +73,9 @@
 @media (min-width: 576px) and (max-width: 767px) {
     :root {
         --uInfo_height: 32vh;
+    }
+    #second {
+        border: none !important;
     }
     #profile-part {
         width: 80vw !important;
@@ -97,6 +104,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        border: none !important;
     }
     #user-info {
         display: flex;
@@ -132,6 +140,9 @@
     :root {
         --uInfo_height: 20vh;
     }
+    #second {
+        border: none !important;
+    }
     #profile-part {
         width: 80vw !important;
         height: 920px !important;
@@ -155,6 +166,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        border: none !important;
     }
     #user-info {
         display: flex;
