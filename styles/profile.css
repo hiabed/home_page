@@ -7,10 +7,37 @@
         --uInfo_height: 40vh;
     }
     #profile-part {
+        margin-top: 10px !important;
+        width: 100vw !important;
+        height: 920px !important;
+    }
+    #profile-container {
+        height: 900px !important;
+        width: 100vw !important;
+    }
+    #profile-part #statistics {
+        margin-top: 20px;
+        height: 488px !important;
+    }
+    #match-history {
+        height: 100% !important;
+    }
+    /* #profile-part {
         width: 100vw !important;
         margin-top: 100px !important;
         height: 640px !important;
+    } */
+    /* #profile-container {
+        height: 768px !important;
+        width: 100vw !important;
     }
+    #profile-part #statistics {
+        margin-top: 20px;
+        height: 410px !important;
+    } */
+    /* #match-history {
+        height: 400px !important;
+    } */
     #user-picture {
         margin-top: 10px !important;
         bottom: 0 !important;
@@ -27,14 +54,6 @@
     #games-container {
         height: 100% !important;
     }
-    #profile-container {
-        height: 768px !important;
-        width: 100vw !important;
-    }
-    #profile-part #statistics {
-        margin-top: 20px;
-        height: 410px !important;
-    }
     .game-record {
         width: 98% !important;
         gap: 0 !important;
@@ -44,9 +63,6 @@
     }
     .game-record h2 {
         font-size: 16px;
-    }
-    #match-history {
-        height: 400px !important;
     }
 }
 
@@ -56,8 +72,23 @@
     }
     #profile-part {
         width: 80vw !important;
-        height: 640px !important;
+        height: 920px !important;
     }
+    #profile-container {
+        height: 900px !important;
+        width: 100% !important;
+    }
+    #profile-part #statistics {
+        margin-top: 20px;
+        height: 488px !important;
+    }
+    #match-history {
+        height: 100% !important;
+    }
+    /* #profile-part {
+        width: 80vw !important;
+        height: 640px !important;
+    } */
     #user-picture {
         margin-top: 10px !important;
         bottom: 0 !important;
@@ -74,14 +105,14 @@
     #games-container {
         height: 100% !important;
     }
-    #profile-container {
+    /* #profile-container {
         height: 768px !important;
         width: 100% !important;
-    }
-    #profile-part #statistics {
+    } */
+    /* #profile-part #statistics {
         margin-top: 20px;
         height: 410px !important;
-    }
+    } */
     .game-record {
         width: 98% !important;
         gap: 0 !important;
@@ -92,14 +123,9 @@
     .game-record h2 {
         font-size: 16px;
     }
-    #match-history {
+    /* #match-history {
         height: 400px !important;
-    }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-    #profile-container {
-        min-width: 83vw;
-    }
+    } */
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -108,7 +134,18 @@
     }
     #profile-part {
         width: 80vw !important;
-        height: 640px !important;
+        height: 920px !important;
+    }
+    #profile-container {
+        height: 900px !important;
+        width: 100% !important;
+    }
+    #profile-part #statistics {
+        margin-top: 20px;
+        height: 488px !important;
+    }
+    #match-history {
+        height: 100% !important;
     }
     #user-picture {
         margin-top: 10px !important;
@@ -126,14 +163,6 @@
     #games-container {
         height: 100% !important;
     }
-    #profile-container {
-        height: 768px !important;
-        width: 100% !important;
-    }
-    #profile-part #statistics {
-        margin-top: 20px;
-        height: 410px !important;
-    }
     .game-record {
         width: 98% !important;
         gap: 0 !important;
@@ -144,8 +173,11 @@
     .game-record h2 {
         font-size: 16px;
     }
-    #match-history {
-        height: 400px !important;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #profile-container {
+        min-width: 83vw;
     }
 }
 

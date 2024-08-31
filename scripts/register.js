@@ -31,11 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             if (response.ok) {
                 const jsonResponse = await response.json();
-                console.log("Json response: " + jsonResponse);
+                console.log("Json response: " + jsonResponse.data.username);
                 if (jsonResponse.status === "success") {
-                    const dataObj = Object.fromEntries(formData);
-                    console.log("dataObj type is: " + typeof dataObj);
-                    showHome(dataObj);
+                    showHome(jsonResponse.data);
                 }
                 return jsonResponse;
             }
