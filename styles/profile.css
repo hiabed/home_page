@@ -56,6 +56,7 @@
     }
     #profile-part {
         width: 80vw !important;
+        height: 640px !important;
     }
     #user-picture {
         margin-top: 10px !important;
@@ -71,10 +72,33 @@
         flex-direction: column;
     }
     #games-container {
-        height: 48% !important;
+        height: 100% !important;
     }
     #profile-container {
-        height: 91vh !important;
+        height: 768px !important;
+        width: 100% !important;
+    }
+    #profile-part #statistics {
+        margin-top: 20px;
+        height: 410px !important;
+    }
+    .game-record {
+        width: 98% !important;
+        gap: 0 !important;
+    }
+    #match {
+        gap: 10px !important;
+    }
+    .game-record h2 {
+        font-size: 16px;
+    }
+    #match-history {
+        height: 400px !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    #profile-container {
+        min-width: 83vw;
     }
 }
 
@@ -84,6 +108,7 @@
     }
     #profile-part {
         width: 80vw !important;
+        height: 640px !important;
     }
     #user-picture {
         margin-top: 10px !important;
@@ -99,10 +124,28 @@
         flex-direction: column;
     }
     #games-container {
-        height: 48% !important;
+        height: 100% !important;
     }
     #profile-container {
-        height: 91vh !important;
+        height: 768px !important;
+        width: 100% !important;
+    }
+    #profile-part #statistics {
+        margin-top: 20px;
+        height: 410px !important;
+    }
+    .game-record {
+        width: 98% !important;
+        gap: 0 !important;
+    }
+    #match {
+        gap: 10px !important;
+    }
+    .game-record h2 {
+        font-size: 16px;
+    }
+    #match-history {
+        height: 400px !important;
     }
 }
 
