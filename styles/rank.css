@@ -24,6 +24,7 @@
     }
     #top-ranked {
         border: none !important;
+        box-shadow: none !important;
         height: 220px !important;
     }
     #the-rest {
