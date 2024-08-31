@@ -6,30 +6,31 @@
     :root {
         --uInfo_height: 40vh;
     }
-    #user-info {
-        box-shadow: none !important;
-    }
     #profile-part {
-        height: 100vh !important;
-        top: 70px !important;
-        width: 80vw !important;
-        min-width: 307px;
-    }
-    #first, #second {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100% !important;
-        margin: 20px auto !important;
+        width: 100vw !important;
     }
     #user-picture {
-        width: 64px !important;
-        height: 64px !important;
-        bottom: 59px !important;
+        margin-top: 10px !important;
+        bottom: 0 !important;
     }
-    #match-history {
-        height: 191px;
+    #first {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #user-info {
+        display: flex;
+        flex-direction: column;
+    }
+    #games-container {
+        height: 40% !important;
+    }
+    #profile-container {
+        height: 91vh !important;
+        width: 100vw !important;
+    }
+    #profile-part #statistics {
+        margin-top: 20px;
     }
 }
 
@@ -38,22 +39,26 @@
         --uInfo_height: 32vh;
     }
     #profile-part {
-        height: 68vh !important;
-        top: 70px !important;
         width: 80vw !important;
     }
-    #first, #second {
+    #user-picture {
+        margin-top: 10px !important;
+        bottom: 0 !important;
+    }
+    #first {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100% !important;
-        margin: 20px auto !important;
+        gap: 20px;
     }
-    #user-picture {
-        width: 64px !important;
-        height: 64px !important;
-        bottom: 59px !important;
+    #user-info {
+        display: flex;
+        flex-direction: column;
+    }
+    #games-container {
+        height: 48% !important;
+    }
+    #profile-container {
+        height: 91vh !important;
     }
 }
 
@@ -63,6 +68,25 @@
     }
     #profile-part {
         width: 80vw !important;
+    }
+    #user-picture {
+        margin-top: 10px !important;
+        bottom: 0 !important;
+    }
+    #first {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #user-info {
+        display: flex;
+        flex-direction: column;
+    }
+    #games-container {
+        height: 48% !important;
+    }
+    #profile-container {
+        height: 91vh !important;
     }
 }
 
