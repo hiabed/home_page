@@ -22,14 +22,12 @@
     width: fit-content !important;
 }
 
-#profile-setting {
+#profile-setting, #log-sec {
     overflow-y: auto;
-    height: calc(100vh - 50px - 20px); /* 50px height of nav-bar 20px margin-bottom of nav-bar */
+    height: calc(100vh - 50px - 20px);
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: center; */
     gap: 20px;
 }
 
@@ -52,8 +50,10 @@
 }
 
 #profile-header {
-    margin: 0 30px;
-    width: 60%;
+    width: 600px;
+    margin: auto;
+    border: 2px solid white;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -67,6 +67,7 @@
 #first-container {
     display: flex;
     gap: 15px;
+    width: fit-content;
 }
 
 #setting-pic-infos {
@@ -75,13 +76,13 @@
 }
 
 #profile-header .separator {
-    width: 150%;
+    width: 100%;
     display: flex;
     gap: 30px;
 }
 
 .separator hr {
-    width: 45%;
+    width: 60%;
     position: relative;
     bottom: 5px;
 }
@@ -176,6 +177,10 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    /* justify-content: center; */
+    overflow-y: auto;
+    height: calc(100vh - 50px - 20px);
+    width: 100%;
 }
 
 #switch-mod {
@@ -250,6 +255,20 @@
     #save-div button {
         width: fit-content;
     }
+    #profile-header {
+        border: none;
+    }
+    #setting-pic {
+        width: 64px;
+        min-width: 64px;
+        height: 64px;
+    }
+    #setting-pic-infos {
+        top: 10px;
+    }
+    #setting-pic-infos h5 {
+        font-size: 16px !important;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -266,5 +285,13 @@
     }
     .account-info .separator {
         width: 100%;
+    }
+    #profile-header {
+        border: none;
+    }
+    #setting-pic {
+        width: 96px;
+        height: 96px;
+        min-width: 96px;
     }
 }
