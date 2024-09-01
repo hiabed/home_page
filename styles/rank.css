@@ -3,17 +3,24 @@
         display: none !important;
     } */
     /* fix it later in JS */
-    #the-rest {
+    #the-rest2 {
+        display: flex !important;
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        border-radius: 5px;
+        overflow-y: auto;
+        border: 2px solid gray;
+    }
+    #the-rest {
+        display: none !important;
     }
     #second-col {
-        width: 100% !important;
-        min-width: 350px;
+        display: none !important;
     }
     #first-col {
-        width: 100% !important;
-        min-width: 350px;
-        border-bottom: solid white 2px;
+        display: none !important;
     }
     #rank-part {
         width: 100% !important;
@@ -72,6 +79,10 @@
     #first-three {
         justify-content: space-evenly !important;
     }
+}
+
+#the-rest2 {
+    display: none;
 }
 
 #rank-part {
