@@ -36,15 +36,9 @@
     }
     #chats2 {
         height: 200px !important;
-        /* overflow-y: auto; */
     }
     .dropdown-toggle::after {
-        font-family: 'FontAwesome';
-        color: white;
-        content: "\f0c9";
-        border-bottom: 0;
-        border: none;
-        margin: auto !important;
+        display: none;
     }
 }
 
