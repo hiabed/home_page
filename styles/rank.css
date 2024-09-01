@@ -147,7 +147,7 @@
     border: 2px solid rgb(255, 215, 0);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    background-image: url(/images/me.jpg);
+    background-image: url(images/me.jpg);
     background-size: cover;
     box-shadow: 0 0 15px rgb(255, 215, 0);
 }
@@ -174,7 +174,7 @@
     border: 2px solid rgb(192, 192, 192);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    background-image: url(/images/me.jpg);
+    background-image: url(images/me.jpg);
     background-size: cover;
     box-shadow: 0 0 10px rgb(192, 192, 192);
 }
@@ -209,7 +209,7 @@
     border: 2px solid rgb(205, 127, 50);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    background-image: url(/images/me.jpg);
+    background-image: url(images/me.jpg);
     background-size: cover;
     box-shadow: 0 0 10px rgb(205, 127, 50);
 }
@@ -270,7 +270,7 @@
 }
 
 .player-rank .player-pic {
-    background-image: url(/images/me.jpg);
+    background-image: url(images/me.jpg);
     background-size: cover;
     width: 60px;
     height: 60px;
