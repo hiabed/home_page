@@ -83,7 +83,7 @@
     margin: auto;
     background: rgb(37,46,71);
     background: linear-gradient(180deg, rgba(37,46,71,1) 0%, rgba(9,24,66,1) 50%, rgba(0,17,62,1) 100%);
-    background-image: url(images/1.jpeg);
+    background-image: url(../images/1.jpeg);
     background-size: cover;
 }
 
