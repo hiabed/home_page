@@ -194,11 +194,11 @@
 }
 
 #first-sep hr {
-    width: 40%;
+    width: 35%;
 }
 
 #second-sep hr {
-    width: 37%;
+    width: 33%;
 }
 
 #language {
@@ -235,10 +235,14 @@
     }
     #general {
         align-items: start;
-        min-width: 340px;
+        min-width: 320px;
     }
     #switch-mod, #language, #dif, #check-box {
         margin-left: 20px;
+    }
+    #second-sep hr {
+        min-width: 22%;
+        width: 30%;
     }
     .separator hr {
         width: 60% !important;
