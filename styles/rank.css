@@ -1,10 +1,19 @@
 @media (min-width: 0px) and (max-width: 575px) {
-    #second-col {
+    /* #second-col {
         display: none !important;
+    } */
+    /* fix it later in JS */
+    #the-rest {
+        flex-direction: column;
+    }
+    #second-col {
+        width: 100% !important;
+        min-width: 350px;
     }
     #first-col {
         width: 100% !important;
         min-width: 350px;
+        border-bottom: solid white 2px;
     }
     #rank-part {
         width: 100% !important;
