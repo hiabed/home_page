@@ -3,6 +3,7 @@
     height: 100vh;
     width: calc(100% - 215px);
     min-width: calc(100% - 16.66666667%);
+    overflow-y: auto;
 }
 
 #setting-nav-bar {
@@ -80,7 +81,7 @@
 }
 
 .separator hr {
-    width: 80%;
+    width: 45%;
     position: relative;
     bottom: 5px;
 }
@@ -151,13 +152,16 @@
 }
 
 #log-sec-container {
-    width: 60%;
+    width: 600px;
+    margin: auto;
+    border: 2px solid white;
+    padding: 15px;
 }
 
 .account-info .separator {
     margin-top: 20px;
     height: 25px;
-    width: 150%;
+    width: 100%;
     display: flex;
     gap: 30px;
 }
@@ -219,10 +223,12 @@
         width: 100vw !important;
     }
     #log-sec-container {
+        padding: 0 !important;
         width: 100% !important;
+        border: none !important;
     }
     #log-sec {
-        width: 100vw;
+        width: 100%;
     }
     #log-sec-container .separator {
         width: 100% !important;
@@ -231,8 +237,30 @@
         align-items: start;
         min-width: 340px;
     }
-
     #switch-mod, #language, #dif, #check-box {
         margin-left: 20px;
+    }
+    .separator hr {
+        width: 60% !important;
+    }
+    #save-div button {
+        width: fit-content;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .separator hr {
+        width: 60% !important;
+    }
+    #log-sec {
+        width: 100%;
+    }
+    #log-sec-container {
+        padding: 0 !important;
+        width: 100% !important;
+        border: none !important;
+    }
+    .account-info .separator {
+        width: 100%;
     }
 }
